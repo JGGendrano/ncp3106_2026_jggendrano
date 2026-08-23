@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gerald Bio Note</title>
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+
+    <main class="wrapper">
+
+
+
+        <section class="top-row-bg">
+
+            <div class="square-pic">
+
+                <img src="assets/profile.png" alt="Gerald Main Photo">
+
+            </div>
+
+
+
+            <div class="middle-stack">
+
+                <div class="rect-box name-box">
+
+                    <h1>John Gerald Gendrano</h1>
+
+                    <p>Computer Engineering Student</p>
+
+                </div>
+
+                <div class="rect-box socials-box">
+
+                    <a href="https://www.facebook.com/share/17t5WPNAP9/" target="_blank"><i class="fab fa-facebook"></i></a>
+
+                    <a href="https://www.instagram.com/john.geraldz?igsh=ZmZ3aTJmd2s0czBn" target="_blank"><i class="fab fa-instagram"></i></a>
+
+                    <a href="https://open.spotify.com/user/tb7f8ps3hmsa190lqe1xc5ij5?si=j2zYf1Z1Sf6Zr5LuO2QjYA&utm_source=copy-link" target="_blank"><i class="fab fa-spotify"></i></a>
+
+                    <a href="https://youtube.com/@theking.1000?si=qB0cOhLmT6pP5o3V" target="_blank"><i class="fab fa-youtube"></i></a>
+
+                    <a href="https://www.tiktok.com/@papanudowugartormiebrae?_r=1&_t=ZS-98Gd3wIJNk0" target="_blank"><i class="fab fa-tiktok"></i></a>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="square-pic">
+
+                <img src="assets/profile2.png" alt="Gerald Secondary Photo">
+
+            </div>
+
+        </section>
+
+
+
+        <section class="middle-banner">
+
+            <h2>About Gerald</h2>
+
+            <p>
+
+                <strong>John Gerald Gendrano</strong>, commonly known as <strong>Gerald</strong>, is a 20-year-old student from Bulacan who is dedicated to expanding his knowledge and developing his skills in computer engineering. Last semester, My group successfully built an Arduino-powered fire truck and an automatic watering system, while also mastering the practical use of simple integrated circuits. I am committed to continuous learning and personal growth, aiming to build a strong technical foundation that will prepare me for future opportunities and enable me to contribute meaningfully to my profession.
+
+            </p>
+
+        </section>
+
+
+
+        <section class="bottom-row-bg">
+
+            <div class="card-box">
+
+                <img src="assets/album.png" alt="Picture 1">
+
+            </div>
+
+            <div class="card-box">
+
+                <img src="assets/album3.png" alt="Picture 2">
+
+            </div>
+
+            <div class="card-box">
+
+                <img src="assets/album2.png" alt="Picture 3">
+
+            </div>
+
+        </section>
+
+
+
+    </main>
+
+
+
+</body>
+
+</html>
