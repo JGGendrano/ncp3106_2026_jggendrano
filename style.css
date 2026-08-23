@@ -5,7 +5,6 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* OVERALL PAGE BACKGROUND: CHARCOAL DARK GRAY */
 body {
     background-color: #121820; 
     display: flex;
@@ -23,19 +22,15 @@ body {
     gap: 20px;
 }
 
-/* CYBER / TECH PALETTE VARIABLES */
 :root {
-    --bg-dark-card: #1A202C;      /* Dark Gray/Blue for main row containers */
-    --bg-neon-cyan: #00F5D4;      /* Electric Cyan for accent boxes */
-    --accent-peach: #FFFFFF;      /* Soft Warm Yellow/Peach for borders & highlights */
-    --text-dark: #0F172A;         /* Dark text inside bright boxes */
-    --text-light: #F8FAFC;        /* Light text for dark elements */
-    --border-style: 3px solid #00F5D4; /* Glowing Cyan Borders */
+    --bg-dark-card: #1A202C;
+    --bg-neon-cyan: #00F5D4;
+    --accent-peach: #FFFFFF;
+    --text-dark: #0F172A;
+    --text-light: #F8FAFC;
+    --border-style: 3px solid #00F5D4;
 }
 
-/* ==========================================
-   TOP ROW
-========================================== */
 .top-row-bg {
     background-color: var(--bg-dark-card);
     padding: 15px;
@@ -112,9 +107,6 @@ body {
     color: #FFFFFF;
 }
 
-/* ==========================================
-   MIDDLE ROW (Banner)
-========================================== */
 .middle-banner {
     background-color: var(--bg-dark-card);
     border: var(--border-style);
@@ -136,9 +128,6 @@ body {
     text-align: justify;
 }
 
-/* ==========================================
-   BOTTOM ROW (Cards Grid)
-========================================== */
 .bottom-row-bg {
     background-color: var(--bg-dark-card);
     padding: 15px;
@@ -163,9 +152,6 @@ body {
     display: block;
 }
 
-/* ==========================================
-   RESPONSIVE DESIGN (Mobile Friendly)
-========================================== */
 @media (max-width: 768px) {
     .top-row-bg {
         flex-direction: column;
