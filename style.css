@@ -1,229 +1,90 @@
-/* Color Palette: Cyber Blue & Deep Tech Dark */
-:root {
-    --tech-blue: #0072ff;
-    --cyber-blue: #00d2ff;
-    --dark-navy: #0b132b;
-    --slate-dark: #1c2541;
-    --deep-bg: #0a0e17;
-    --card-bg: #111a2e;
-    --text-muted: #94a3b8;
-    --text-light: #e2e8f0;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: var(--text-light);
-    background-color: var(--deep-bg);
-}
-
-/* 1. Top Utility Bar */
-.top-bar {
-    background-color: #05080f;
-    color: var(--text-muted);
-    font-size: 0.85rem;
-    border-bottom: 1px solid rgba(0, 210, 255, 0.1);
-}
-
-.top-bar a {
-    color: var(--text-muted);
-    text-decoration: none;
-    transition: color 0.2s;
-}
-
-.top-bar a:hover {
-    color: var(--cyber-blue);
-}
-
-/* 2. Main Navigation */
-.bg-tech-nav {
-    background-color: rgba(11, 19, 43, 0.95);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(0, 210, 255, 0.15);
+/* --- Brand Colors & Navbar --- */
+.bg-ue {
+    background-color: #b71c1c !important;
 }
 
 .navbar-brand {
     font-weight: 700;
-    font-size: 1.15rem;
     letter-spacing: 0.5px;
 }
 
 .navbar-brand img {
     height: 42px;
     width: auto;
-    margin-right: 12px;
+    object-fit: contain;
 }
 
-.brand-sub {
-    font-size: 0.7rem;
-    letter-spacing: 1.5px;
-    color: var(--cyber-blue);
+/* --- Small Carousel --- */
+#myCarousel {
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.nav-link {
-    color: var(--text-light) !important;
-    font-weight: 500;
-    font-size: 0.92rem;
-    padding: 0.6rem 0.9rem !important;
-    transition: all 0.2s ease;
+#myCarousel .carousel-item {
+    height: 340px;
 }
 
-.nav-link:hover, .nav-link.active {
-    color: var(--cyber-blue) !important;
-    background-color: rgba(0, 210, 255, 0.08);
-    border-radius: 4px;
+#myCarousel img {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
 }
 
-/* 3. Hero Banner */
-.hero-banner {
-    background: linear-gradient(135deg, rgba(10, 14, 23, 0.92), rgba(11, 19, 43, 0.88)), 
-                url('/assets2/welcome.jpg') center/cover no-repeat;
-    color: #fff;
-    padding: 110px 0 100px 0;
-    position: relative;
-    border-bottom: 1px solid rgba(0, 210, 255, 0.15);
+/* --- News Cards --- */
+.card-ue {
+    border: 1px solid #e0e0e0;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.hero-badge {
-    background: rgba(0, 210, 255, 0.15);
-    color: var(--cyber-blue);
-    border: 1px solid var(--cyber-blue);
-    font-weight: 600;
+.card-ue:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
 }
 
-.text-gradient-blue {
-    background: linear-gradient(90deg, #ffffff, var(--cyber-blue));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.card-ue .card-img-top {
+    height: 175px;
+    object-fit: cover;
 }
 
-/* Buttons */
-.btn-tech-primary {
-    background: linear-gradient(90deg, var(--tech-blue), var(--cyber-blue));
-    border: none;
-    color: #fff;
-    font-weight: 600;
-    box-shadow: 0 0 15px rgba(0, 210, 255, 0.3);
-    transition: all 0.3s ease;
-}
-
-.btn-tech-primary:hover {
-    background: linear-gradient(90deg, #0056c6, #00b4db);
-    box-shadow: 0 0 25px rgba(0, 210, 255, 0.5);
-    color: #fff;
-    transform: translateY(-2px);
-}
-
-.btn-tech-outline {
-    border: 1px solid var(--cyber-blue);
-    color: var(--cyber-blue);
-    font-weight: 600;
-    background: transparent;
-    transition: all 0.3s ease;
-}
-
-.btn-tech-outline:hover {
-    background: var(--cyber-blue);
-    color: var(--dark-navy);
-    transform: translateY(-2px);
-}
-
-/* Titles & Dividers */
-.section-header {
-    color: #fff;
+.card-title {
+    color: #b71c1c;
     font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.8px;
-    margin-bottom: 0.5rem;
+    font-size: 1.05rem;
 }
 
-.section-divider {
-    width: 60px;
-    height: 3px;
-    background: linear-gradient(90deg, var(--tech-blue), var(--cyber-blue));
-    margin-bottom: 2rem;
-}
-
-/* Light / Secondary Section Alternative (Dark Slate) */
-.bg-tech-surface {
-    background-color: #0e1526;
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-}
-
-/* Feature & Highlight Cards */
-.tech-card {
-    background-color: var(--card-bg);
-    border: 1px solid rgba(0, 210, 255, 0.12);
-    border-radius: 8px;
-    transition: all 0.3s ease;
-}
-
-.tech-card:hover {
-    transform: translateY(-5px);
-    border-color: var(--cyber-blue);
-    box-shadow: 0 8px 24px rgba(0, 210, 255, 0.15);
-}
-
-.highlight-icon-box {
-    width: 52px;
-    height: 52px;
-    background: rgba(0, 210, 255, 0.1);
-    color: var(--cyber-blue);
-    border: 1px solid rgba(0, 210, 255, 0.25);
-    border-radius: 8px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.6rem;
-    margin-bottom: 1.2rem;
-}
-
-.stat-box {
-    background: rgba(17, 26, 46, 0.8);
-    border-left: 4px solid var(--cyber-blue);
-    border-radius: 6px;
-    padding: 16px;
-    border-top: 1px solid rgba(255,255,255,0.05);
-}
-
-/* Modals */
-.modal-content {
-    background-color: var(--card-bg);
-    border: 1px solid rgba(0, 210, 255, 0.2);
-    color: var(--text-light);
-}
-
-.modal-header {
-    background-color: var(--dark-navy);
-    border-bottom: 1px solid rgba(0, 210, 255, 0.15);
-}
-
-.modal-footer {
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
-}
-
-/* Footer */
-footer {
-    background-color: #05080f;
-    border-top: 1px solid rgba(0, 210, 255, 0.1);
-    color: var(--text-muted);
-}
-
-footer h6 {
-    color: #fff;
+/* --- Buttons --- */
+.btn-ue {
+    background-color: #b71c1c;
+    border-color: #b71c1c;
+    color: #ffffff;
     font-weight: 600;
 }
 
-footer a {
-    color: var(--text-muted);
-    text-decoration: none;
-    transition: color 0.2s;
+.btn-ue:hover,
+.btn-ue:focus {
+    background-color: #800000;
+    border-color: #800000;
+    color: #ffffff;
 }
 
-footer a:hover {
-    color: var(--cyber-blue);
+/* --- Accordion & Modal --- */
+.accordion-button:not(.collapsed) {
+    color: #b71c1c;
+    background-color: #fde8e8;
+    font-weight: 600;
+}
+
+.accordion-button:focus {
+    border-color: #b71c1c;
+    box-shadow: 0 0 0 0.25rem rgba(183, 28, 28, 0.25);
+}
+
+.modal-header-ue {
+    background-color: #b71c1c;
+    color: #ffffff;
+}
+
+.modal-header-ue .btn-close {
+    filter: invert(1) grayscale(100%) brightness(200%);
 }
