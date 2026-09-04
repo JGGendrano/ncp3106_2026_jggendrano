@@ -1,11 +1,45 @@
-/* --- Brand Colors & Navbar --- */
-.bg-ue {
-    background-color: #b71c1c !important;
+/* --- Root Color Variables (Dark Tech & Clean Monochrome/Cyan) --- */
+:root {
+    --bg-dark: #0b0f19;
+    --bg-surface: #111827;
+    --bg-card: #1f2937;
+    --border-color: #374151;
+    --accent-white: #ffffff;
+    --accent-silver: #e5e7eb;
+    --accent-blue: #00d2ff;
+    --text-main: #f3f4f6;
+    --text-muted: #9ca3af;
 }
 
-.navbar-brand {
-    font-weight: 700;
-    letter-spacing: 0.5px;
+/* --- Global Body & Text --- */
+body {
+    background-color: var(--bg-dark) !important;
+    color: var(--text-main) !important;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+/* --- Top Utility Bar --- */
+.top-bar {
+    background-color: #05070d;
+    font-size: 0.82rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.top-bar a {
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.top-bar a:hover {
+    color: var(--accent-white);
+}
+
+/* --- Main Navbar --- */
+.bg-tech-nav {
+    background-color: rgba(11, 15, 25, 0.95) !important;
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--border-color);
 }
 
 .navbar-brand img {
@@ -14,77 +48,192 @@
     object-fit: contain;
 }
 
-/* --- Small Carousel --- */
-#myCarousel {
-    max-width: 850px;
-    margin-left: auto;
-    margin-right: auto;
+.navbar-brand .brand-sub {
+    font-size: 0.65rem;
+    letter-spacing: 1.5px;
+    color: var(--accent-white);
+    opacity: 0.85;
 }
 
-#myCarousel .carousel-item {
-    height: 340px;
+.nav-link {
+    color: var(--text-muted) !important;
+    font-weight: 500;
+    transition: color 0.2s ease;
 }
 
-#myCarousel img {
-    width: 100%;
-    height: 340px;
-    object-fit: cover;
+.nav-link:hover,
+.nav-link.active {
+    color: var(--accent-white) !important;
 }
 
-/* --- News Cards --- */
-.card-ue {
-    border: 1px solid #e0e0e0;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+/* --- Hero Banner & Gradients --- */
+.hero-banner {
+    background: radial-gradient(circle at top center, #1e293b 0%, var(--bg-dark) 75%);
+    padding: 75px 15px 65px;
+    border-bottom: 1px solid var(--border-color);
 }
 
-.card-ue:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+.hero-badge {
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid var(--accent-white);
+    color: var(--accent-white);
+    letter-spacing: 1px;
+    font-size: 0.75rem;
 }
 
-.card-ue .card-img-top {
-    height: 175px;
-    object-fit: cover;
+.text-gradient-blue {
+    background: linear-gradient(90deg, #ffffff 30%, var(--accent-blue) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.card-title {
-    color: #b71c1c;
+/* --- Section Headers & Dividers --- */
+.section-header {
     font-weight: 700;
-    font-size: 1.05rem;
+    color: var(--accent-white);
 }
 
-/* --- Buttons --- */
-.btn-ue {
-    background-color: #b71c1c;
-    border-color: #b71c1c;
-    color: #ffffff;
+.section-divider {
+    height: 3px;
+    width: 60px;
+    background: var(--accent-white);
+    margin: 10px 0 20px;
+    border-radius: 2px;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+}
+
+.bg-tech-surface {
+    background-color: var(--bg-surface) !important;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* --- Cards & Feature Boxes --- */
+.stat-box {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 14px;
+}
+
+.tech-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tech-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent-white);
+    box-shadow: 0 8px 24px rgba(255, 255, 255, 0.1);
+}
+
+.highlight-icon-box {
+    width: 52px;
+    height: 52px;
+    background-color: rgba(255, 255, 255, 0.06);
+    color: var(--accent-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* --- Badges (Replaced Red Badges) --- */
+.badge.bg-danger {
+    background-color: var(--accent-white) !important;
+    color: #0b0f19 !important;
     font-weight: 600;
 }
 
-.btn-ue:hover,
-.btn-ue:focus {
-    background-color: #800000;
-    border-color: #800000;
-    color: #ffffff;
+/* --- Buttons (Replaced Red with Solid White Primary) --- */
+.btn-tech-primary {
+    background-color: var(--accent-white);
+    border: 1px solid var(--accent-white);
+    color: #0b0f19;
+    font-weight: 600;
+    transition: all 0.2s ease;
 }
 
-/* --- Accordion & Modal --- */
+.btn-tech-primary:hover,
+.btn-tech-primary:focus {
+    background-color: #d1d5db;
+    border-color: #d1d5db;
+    color: #000000;
+    box-shadow: 0 4px 14px rgba(255, 255, 255, 0.35);
+}
+
+.btn-tech-outline {
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    color: var(--accent-white);
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.btn-tech-outline:hover,
+.btn-tech-outline:focus {
+    background-color: var(--accent-white);
+    border-color: var(--accent-white);
+    color: #0b0f19;
+    box-shadow: 0 4px 14px rgba(255, 255, 255, 0.2);
+}
+
+/* --- Accordion (FAQ) --- */
+.accordion-item {
+    background-color: var(--bg-card) !important;
+    border: 1px solid var(--border-color) !important;
+}
+
+.accordion-button {
+    background-color: var(--bg-card) !important;
+    color: #ffffff !important;
+    font-weight: 600;
+    box-shadow: none !important;
+}
+
 .accordion-button:not(.collapsed) {
-    color: #b71c1c;
-    background-color: #fde8e8;
-    font-weight: 600;
+    background-color: rgba(255, 255, 255, 0.06) !important;
+    color: var(--accent-white) !important;
+    border-bottom: 1px solid var(--border-color);
 }
 
-.accordion-button:focus {
-    border-color: #b71c1c;
-    box-shadow: 0 0 0 0.25rem rgba(183, 28, 28, 0.25);
+.accordion-button::after {
+    filter: invert(1);
 }
 
-.modal-header-ue {
-    background-color: #b71c1c;
-    color: #ffffff;
+/* --- Modals --- */
+.modal-content {
+    background-color: var(--bg-surface) !important;
+    border: 1px solid var(--border-color);
+    color: var(--text-main);
 }
 
-.modal-header-ue .btn-close {
-    filter: invert(1) grayscale(100%) brightness(200%);
+.modal-header {
+    background-color: var(--bg-dark);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.modal-footer {
+    border-top: 1px solid var(--border-color);
+}
+
+/* --- Footer --- */
+footer {
+    background-color: #05070d;
+    color: var(--text-muted);
+    border-top: 1px solid var(--border-color);
+}
+
+footer a {
+    color: var(--text-muted);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--accent-white);
 }
