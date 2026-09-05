@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specializations | UE Computer Engineering</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Shared Project Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Top Utility Bar -->
+<div class="top-bar py-2 d-none d-lg-block">
+    <div class="container d-flex justify-content-between align-items-center">
+        <div>
+            <span><i class="bi bi-geo-alt-fill text-info me-1"></i>
+                <a href="https://maps.app.goo.gl/nA2VTfojB23gJPCB9" target="_blank" rel="noopener noreferrer" class="me-2 text-decoration-none">UE Manila</a> | 
+                <a href="https://maps.app.goo.gl/nYL3vggiQVSx388dA" target="_blank" rel="noopener noreferrer" class="ms-2 text-decoration-none">UE Caloocan</a>
+            </span>
+            <span class="ms-3"><i class="bi bi-terminal-fill text-info me-1"></i> 
+                <a href="https://www.ue.edu.ph/cal/computer-engineering/" target="_blank" rel="noopener noreferrer" class="text-decoration-none">cpe@ue.edu.ph</a>
+            </span>
+        </div>
+        <div>
+            <a href="#welcomeModal" data-bs-toggle="modal" class="me-3 text-decoration-none"><i class="bi bi-person-fill me-1"></i>Student Portal</a>
+            <a href="#tracks" class="me-3 text-decoration-none">Fields of Specialization</a>
+            <a href="#applyModal" data-bs-toggle="modal" class="text-info fw-bold text-decoration-none">Admission 2026</a>
+        </div>
+    </div>
+</div>
+
+<!-- Main Responsive Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-tech-nav sticky-top shadow-sm">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="assets/scpes logo.png" alt="UE Logo" onerror="this.src='https://via.placeholder.com/40x40?text=UE'">
+            <div class="ms-2">
+                <span class="d-block lh-1 text-white fw-bold brand-title">UE COMPUTER ENGINEERING</span>
+                <small class="brand-sub">COLLEGE OF ENGINEERING</small>
+            </div>
+        </a>
+
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about-cpe.html">About CpE</a></li>
+                <li class="nav-item"><a class="nav-link" href="cpe-ue.html">UE CpE</a></li>
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="specializations.html">Specializations</a></li>
+                <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
+                <li class="nav-item"><a class="nav-link" href="faculty.html">Faculty</a></li>
+                <li class="nav-item"><a class="nav-link" href="scpes.html">SCpES</a></li>
+                <li class="nav-item ms-lg-2">
+                    <a class="btn btn-tech-primary btn-sm px-3" href="#applyModal" data-bs-toggle="modal">Apply Now</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Page Header Banner -->
+<header class="hero-banner py-5">
+    <div class="container text-center py-4">
+        <span class="badge hero-badge px-3 py-2 text-uppercase mb-3">Academic Pathways</span>
+        <h1 class="display-4 fw-bold mb-3 text-gradient-blue pb-1 lh-base">Fields of Specialization</h1>
+        <p class="lead mx-auto text-light opacity-75" style="max-width: 760px;">
+            Explore core domains of Computer Engineering—ranging from hardware micro-architecture and embedded devices to intelligent robotics and secure network infrastructures.
+        </p>
+    </div>
+</header>
+
+<main class="py-5" id="tracks">
+    <div class="container">
+        
+        <div class="row g-4">
+
+            <!-- 1. Embedded Systems -->
+            <div class="col-lg-6">
+                <div class="tech-card h-100 p-4 d-flex flex-column">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="highlight-icon-box me-3 mb-0"><i class="bi bi-cpu-fill"></i></div>
+                        <h5 class="fw-bold text-white mb-0">Embedded Systems</h5>
+                    </div>
+                    <p class="small text-light opacity-75 mb-3 flex-grow-1">
+                        Dedicated hardware-software integration engineered for real-time control in mechanical and electrical systems.
+                    </p>
+                    <div class="pt-3 border-top border-secondary border-opacity-50">
+                        <div class="mb-3">
+                            <span class="badge hero-badge text-info border-info me-1 mb-1">Microcontrollers</span>
+                            <span class="badge hero-badge text-info border-info me-1 mb-1">Assembly</span>
+                            <span class="badge hero-badge text-info border-info me-1 mb-1">Verilog</span>
+                            <span class="badge hero-badge text-info border-info me-1 mb-1">C/C++</span>
+                        </div>
+                        <p class="small text-light mb-1"><strong class="text-info"><i class="bi bi-gear-wide-connected me-1"></i>Applications:</strong> Automotive Control Units, Smart Appliances, Avionics</p>
+                        <p class="small text-light mb-0"><strong class="text-info"><i class="bi bi-briefcase me-1"></i>Career Paths:</strong> Embedded Firmware Engineer, PCB Designer</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. Internet of Things (IoT) -->
+            <div class="col-lg-6">
+                <div class="tech-card h-100 p-4 d-flex flex-column">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="highlight-icon-box me-3 mb-0"><i class="bi bi-wifi"></i></div>
+                        <h5 class="fw-bold text-white mb-0">Internet of Things (IoT)</h5>
+                    </div>
+                    <p class="small text-light opacity-75 mb-3 flex-grow-1">
+                        Interconnecting physical nodes, actuators, and wireless protocols for automated, remote telemetry processing.
+                    </p>
+                    <div class="pt-3 border-top border-secondary border-opacity-50">
+                        <div class="mb-3">
+                            <span class="badge hero-badge text-info border-info me-1 mb-1">MQTT</span>
+                            <span class="badge hero-badge text-info border-info me-1 mb-1">ESP32</span>
+                            <span class="badge hero-badge text-info border-info me-1 mb-1">AWS IoT</span>
+                            <span class="badge hero-badge text-info border-info me-1 mb-1">Node-RED</span>
+                        </div>
+                        <p class="small text-light mb-1"><strong class="text-info"><i class="bi bi-gear-wide-connected me-1"></i>Applications:</strong> Automated Irrigation, Smart Home Monitoring</p>
+                        <p class="small text-light mb-0"><strong class="text-info"><i class="bi bi-briefcase me-1"></i>Career Paths:</strong> IoT Systems Architect, Smart Systems Developer</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. Computer Networks -->
+            <div class="col-lg-6">
+                <div class="tech-card h-100 p-4 d-flex flex-column">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="highlight-icon-box me-3 mb-0"><i class="bi bi-diagram-3-fill"></i></div>
+                        <h5 class="fw-bold text-white mb-0">Computer Networks</h5>
+                    </div>
+                    <p class="small text-light opacity-75 mb-3 flex-grow-1">
+                        Designing, configuring, and optimizing transmission pathways, enterprise routers, switches, and protocols.
+                    </p>
+                    <div class="pt-3 border-top border-secondary border-opacity-50">
+                        <div class="mb-3">
+                            <span class="badge hero-badge text-info border-info me-1 mb-1">Cisco Packet Tracer</span>
+                            <span class="badge hero-badge text-info border-info me-1 mb-1">TCP/IP</span>
+                            <span class="badge hero-badge text-info border-info me-1 mb-1">BGP / OSPF</span>
+                            <span class="badge hero-badge text-info border-info me-1 mb-1">Wireshark</span>
+                        </div>
+                        <p class="small text-light mb-1"><strong class="text-info"><i class="bi bi-gear-wide-connected me-1"></i>Applications:</strong> Data Centers, ISP Infrastructures, Fiber Optics</p>
+                        <p class="small text-light mb-0"><strong class="text-info"><i class="bi bi-briefcase me-1"></i>Career Paths:</strong> Network Systems Engineer, CCNA Specialist</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. Cybersecurity -->
+            <div class="col-lg-6">
+                <div class="tech-card h-100 p-4 d-flex flex-column">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="highlight-icon-box me-3 mb-0"><i class="bi bi-shield-lock-fill"></i></div>
+                        <h5 class="fw-bold text-white mb-0">Cybersecurity</h5>
+                    </div>
+                    <p class="small text-light opacity-75 mb-3 flex-grow-1">
+                        Safeguarding hardware architectures, low-level firmware, and network pipelines against malicious intrusion.
+                    </p>
+                    <div class="pt-3 border-top border-secondary border-opacity-50">
+                        <div class="mb-3">
+                            <span class="badge hero-badge text-info border-info me-1 mb-1">Kali Linux</span>
+                            <span class="badge hero-badge text-info border-info me-1 mb-1">Cryptography</span>
+                            <span class="badge hero-badge text-info border-info me-1 mb-1">Metasploit</span>
+                            <span class="badge hero-badge text-info border-info me-1 mb-1">Nmap</span>
+                        </div>
+                        <p class="small text-light mb-1"><strong class="text-info"><i class="bi bi-gear-wide-connected me-1"></i>Applications:</strong> Banking Gateways, Firmware Threat Analysis</p>
+                        <p class="small text-light mb-0"><strong class="text-info"><i class="bi bi-briefcase me-1"></i>Career Paths:</strong> Ethical Hacker, Security Analyst, Pen Tester</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5. Software Development -->
+            <div class="col-lg-6">
+                <div class="tech-card h-100 p-4 d-flex flex-column">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="highlight-icon-box me-3 mb-0"><i class="bi bi-code-slash"></i></div>
+                        <h5 class="fw-bold text-white mb-0">Software Development</h5>
+                    </div>
+                    <p class="small text-light opacity-75 mb-3 flex-grow-1">
+                        Building system-level applications, drivers, graphics engines, and tools with low-level memory and OOP concepts.
+                    </p>
+                    <div class="pt-3 border-top border-secondary border-opacity-50">
+                        <div class="mb-3">
+                            <span class="badge hero-badge text-info border-info me-1 mb-1">C++</span>
+                            <span class="badge hero-badge text-info border-info me-1 mb-1">Python</span>
+                            <span class="badge hero-badge text-info border-info me-1 mb-1">Rust</span>
+                            <span class="badge hero-badge text-info border-info me-1 mb-1">Git / Bash</span>
+                        </div>
+                        <p class="small text-light mb-1"><strong class="text-info"><i class="bi bi-gear-wide-connected me-1"></i>Applications:</strong> Operating Systems, Real-Time Engines, Drivers</p>
+                        <p class="small text-light mb-0"><strong class="text-info"><i class="bi bi-briefcase me-1"></i>Career Paths:</strong> Systems Software Developer, Firmware Programmer</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6. AI & Machine Learning -->
+            <div class="col-lg-6">
+                <div class="tech-card h-100 p-4 d-flex flex-column">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="highlight-icon-box me-3 mb-0"><i class="bi bi-regex"></i></div>
+                        <h5 class="fw-bold text-white mb-0">AI & Machine Learning</h5>
+                    </div>
+                    <p class="small text-light opacity-75 mb-3 flex-grow-1">
+                        Developing neural networks and mathematical algorithms that grant computing hardware autonomous decision ability.
+                    </p>
+                    <div class="pt-3 border-top border-secondary border-opacity-50">
+                        <div class="mb-3">
+                            <span class="badge hero-badge text-info border-info me-1 mb-1">TensorFlow</span>
+                            <span class="badge hero-badge text-info border-info me-1 mb-1">PyTorch</span>
+                            <span class="badge hero-badge text-info border-info me-1 mb-1">OpenCV</span>
+                            <span class="badge hero-badge text-info border-info me-1 mb-1">CUDA</span>
+                        </div>
+                        <p class="small text-light mb-1"><strong class="text-info"><i class="bi bi-gear-wide-connected me-1"></i>Applications:</strong> Computer Vision, Autonomous Driving Systems</p>
+                        <p class="small text-light mb-0"><strong class="text-info"><i class="bi bi-briefcase me-1"></i>Career Paths:</strong> AI Hardware Engineer, Computer Vision Developer</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 7. Data Science & Engineering -->
+            <div class="col-lg-6">
+                <div class="tech-card h-100 p-4 d-flex flex-column">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="highlight-icon-box me-3 mb-0"><i class="bi bi-database-fill-gear"></i></div>
+                        <h5 class="fw-bold text-white mb-0">Data Engineering</h5>
+                    </div>
+                    <p class="small text-light opacity-75 mb-3 flex-grow-1">
+                        Constructing scalable data pipelines, storage arrays, and database infrastructures to process massive stream data.
+                    </p>
+                    <div class="pt-3 border-top border-secondary border-opacity-50">
+                        <div class="mb-3">
+                            <span class="badge hero-badge text-info border-info me-1 mb-1">SQL</span>
+                            <span class="badge hero-badge text-info border-info me-1 mb-1">Apache Spark</span>
+                            <span class="badge hero-badge text-info border-info me-1 mb-1">Kafka</span>
+                            <span class="badge hero-badge text-info border-info me-1 mb-1">ETL Pipelines</span>
+                        </div>
+                        <p class="small text-light mb-1"><strong class="text-info"><i class="bi bi-gear-wide-connected me-1"></i>Applications:</strong> Sensor Telemetry Analytics, Enterprise Data Arrays</p>
+                        <p class="small text-light mb-0"><strong class="text-info"><i class="bi bi-briefcase me-1"></i>Career Paths:</strong> Data Infrastructure Engineer, Big Data Architect</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 8. Robotics & Automation -->
+            <div class="col-lg-6">
+                <div class="tech-card h-100 p-4 d-flex flex-column">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="highlight-icon-box me-3 mb-0"><i class="bi bi-robot"></i></div>
+                        <h5 class="fw-bold text-white mb-0">Robotics & Automation</h5>
+                    </div>
+                    <p class="small text-light opacity-75 mb-3 flex-grow-1">
+                        Integrating feedback loops, actuators, and microcontrollers to design and deploy autonomous physical units.
+                    </p>
+                    <div class="pt-3 border-top border-secondary border-opacity-50">
+                        <div class="mb-3">
+                            <span class="badge hero-badge text-info border-info me-1 mb-1">ROS</span>
+                            <span class="badge hero-badge text-info border-info me-1 mb-1">MATLAB</span>
+                            <span class="badge hero-badge text-info border-info me-1 mb-1">PID Control</span>
+                            <span class="badge hero-badge text-info border-info me-1 mb-1">Servos</span>
+                        </div>
+                        <p class="small text-light mb-1"><strong class="text-info"><i class="bi bi-gear-wide-connected me-1"></i>Applications:</strong> Industrial Assembly, Unmanned Vehicles (UAVs)</p>
+                        <p class="small text-light mb-0"><strong class="text-info"><i class="bi bi-briefcase me-1"></i>Career Paths:</strong> Robotics Systems Engineer, Automation Control Engineer</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 9. Hardware Architecture -->
+            <div class="col-lg-6">
+                <div class="tech-card h-100 p-4 d-flex flex-column">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="highlight-icon-box me-3 mb-0"><i class="bi bi-memory"></i></div>
+                        <h5 class="fw-bold text-white mb-0">Hardware Architecture</h5>
+                    </div>
+                    <p class="small text-light opacity-75 mb-3 flex-grow-1">
+                        Synthesizing micro-architectures, ALU registers, memory bus logic, cache units, and integrated IC silicon chips.
+                    </p>
+                    <div class="pt-3 border-top border-secondary border-opacity-50">
+                        <div class="mb-3">
+                            <span class="badge hero-badge text-info border-info me-1 mb-1">VHDL</span>
+                            <span class="badge hero-badge text-info border-info me-1 mb-1">Verilog</span>
+                            <span class="badge hero-badge text-info border-info me-1 mb-1">RISC-V</span>
+                            <span class="badge hero-badge text-info border-info me-1 mb-1">x86 Logic</span>
+                        </div>
+                        <p class="small text-light mb-1"><strong class="text-info"><i class="bi bi-gear-wide-connected me-1"></i>Applications:</strong> Microprocessor Synthesizers, Custom GPU Silicon</p>
+                        <p class="small text-light mb-0"><strong class="text-info"><i class="bi bi-briefcase me-1"></i>Career Paths:</strong> Silicon Design Engineer, ASIC/FPGA Verification</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 10. Cloud & Edge Computing -->
+            <div class="col-lg-6">
+                <div class="tech-card h-100 p-4 d-flex flex-column">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="highlight-icon-box me-3 mb-0"><i class="bi bi-cloud-haze2-fill"></i></div>
+                        <h5 class="fw-bold text-white mb-0">Cloud & Edge Computing</h5>
+                    </div>
+                    <p class="small text-light opacity-75 mb-3 flex-grow-1">
+                        Distributing processing workloads between centralized servers and localized edge hardware to reduce latency.
+                    </p>
+                    <div class="pt-3 border-top border-secondary border-opacity-50">
+                        <div class="mb-3">
+                            <span class="badge hero-badge text-info border-info me-1 mb-1">Docker</span>
+                            <span class="badge hero-badge text-info border-info me-1 mb-1">Kubernetes</span>
+                            <span class="badge hero-badge text-info border-info me-1 mb-1">AWS / GCP</span>
+                            <span class="badge hero-badge text-info border-info me-1 mb-1">Edge AI</span>
+                        </div>
+                        <p class="small text-light mb-1"><strong class="text-info"><i class="bi bi-gear-wide-connected me-1"></i>Applications:</strong> Low-Latency Telemetry, Smart Infrastructure</p>
+                        <p class="small text-light mb-0"><strong class="text-info"><i class="bi bi-briefcase me-1"></i>Career Paths:</strong> Cloud Systems Engineer, Edge Architect</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Next Page Call-To-Action -->
+        <div class="tech-card p-4 text-center my-5 bg-tech-surface">
+            <h4 class="text-white fw-bold mb-2">Want to see where these specializations lead?</h4>
+            <p class="small mx-auto mb-4" style="color: var(--text-muted); max-width: 600px;">
+                Discover industry career opportunities, job descriptions, and professional tracks for computer engineering graduates.
+            </p>
+            <a href="careers.html" class="btn btn-tech-primary px-4">
+                Next: Explore Career Opportunities <i class="bi bi-arrow-right ms-1"></i>
+            </a>
+        </div>
+
+    </div>
+</main>
+
+<!-- Modals -->
+<div class="modal fade" id="welcomeModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-white"><i class="bi bi-cpu-fill text-info me-2"></i>Welcome to UE CpE</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Welcome to the official <strong>UE Computer Engineering</strong> web platform.</p>
+                <p class="small text-light opacity-75 mb-0">Access outcome-based curricula, laboratory facilities, and project demonstrations.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="applyModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-white"><i class="bi bi-check2-circle text-info me-2"></i>Apply for UE CpE</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p class="fw-bold mb-1">Admissions are Open for AY 2026-2027!</p>
+                <p class="small text-light opacity-75">Incoming freshmen and transferees can apply online through the UE Admissions Portal.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Cancel</button>
+                <a href="https://www.ue.edu.ph" target="_blank" class="btn btn-tech-primary btn-sm">Proceed to Portal</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="pt-5 pb-3">
+    <div class="container">
+        <div class="row g-4 mb-4">
+            <div class="col-md-4">
+                <h6 class="text-uppercase mb-3 text-info fw-bold">UE Computer Engineering</h6>
+                <p class="small text-light opacity-75">
+                    University of the East - College of Engineering.<br>
+                    Developing world-class computer engineers through technical innovation.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <h6 class="text-uppercase mb-3">Portal Navigation</h6>
+                <div class="row small">
+                    <div class="col-6">
+                        <ul class="list-unstyled">
+                            <li class="mb-1"><a href="index.html">Home</a></li>
+                            <li class="mb-1"><a href="about-cpe.html">About CpE</a></li>
+                            <li class="mb-1"><a href="cpe-ue.html">UE Department</a></li>
+                            <li class="mb-1"><a href="specializations.html">Specializations</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6">
+                        <ul class="list-unstyled">
+                            <li class="mb-1"><a href="careers.html">Careers</a></li>
+                            <li class="mb-1"><a href="faculty.html">Faculty</a></li>
+                            <li class="mb-1"><a href="scpes.html">SCpES</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h6 class="text-uppercase mb-3">Campuses & Contact</h6>
+                <p class="small mb-2">
+                    <i class="bi bi-geo-alt me-2 text-info"></i>
+                    <a href="https://maps.app.goo.gl/nA2VTfojB23gJPCB9" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
+                        Manila: 221 C.M. Recto Avenue
+                    </a>
+                </p>
+                <p class="small mb-2">
+                    <i class="bi bi-geo-alt me-2 text-info"></i>
+                    <a href="https://maps.app.goo.gl/nYL3vggiQVSx388dA" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
+                        Caloocan: 105 Samson Road
+                    </a>
+                </p>
+                <p class="small mb-0">
+                    <i class="bi bi-envelope me-2 text-info"></i>
+                    <a href="https://www.ue.edu.ph/cal/computer-engineering/" target="_blank" rel="noopener noreferrer" class="text-decoration-none">cpe@ue.edu.ph</a>
+                </p>
+            </div>
+        </div>
+        <div class="text-center pt-3 border-top border-dark small text-light opacity-75">
+            <p class="mb-0">&copy; 2026 University of the East - BSCpE Department. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

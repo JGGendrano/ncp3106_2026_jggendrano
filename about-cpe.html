@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Computer Engineering | UE Tech Portal</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="top-bar py-2 d-none d-lg-block">
+    <div class="container d-flex justify-content-between align-items-center">
+        <div>
+            <span><i class="bi bi-geo-alt-fill text-info me-1"></i>
+                <a href="https://maps.app.goo.gl/nA2VTfojB23gJPCB9" target="_blank" rel="noopener noreferrer" class="me-2 text-decoration-none">UE Manila</a> | 
+                <a href="https://maps.app.goo.gl/nYL3vggiQVSx388dA" target="_blank" rel="noopener noreferrer" class="ms-2 text-decoration-none">UE Caloocan</a>
+            </span>
+            <span class="ms-3"><i class="bi bi-terminal-fill text-info me-1"></i> 
+                <a href="https://www.ue.edu.ph/cal/computer-engineering/" target="_blank" rel="noopener noreferrer" class="text-decoration-none">cpe@ue.edu.ph</a>
+            </span>
+        </div>
+        <div>
+            <a href="#welcomeModal" data-bs-toggle="modal" class="me-3 text-decoration-none"><i class="bi bi-person-fill me-1"></i>Student Portal</a>
+            <a href="index.html#featured-sections" class="me-3 text-decoration-none">Quick Links</a>
+            <a href="#applyModal" data-bs-toggle="modal" class="text-info fw-bold text-decoration-none">Admission 2026</a>
+        </div>
+    </div>
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-tech-nav sticky-top shadow-sm">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="assets/scpes logo.png" alt="UE Logo" onerror="this.src='https://via.placeholder.com/40x40?text=UE'">
+            <div class="ms-2">
+                <span class="d-block lh-1 text-white fw-bold brand-title">UE COMPUTER ENGINEERING</span>
+                <small class="brand-sub">COLLEGE OF ENGINEERING</small>
+            </div>
+        </a>
+
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="about-cpe.html">About CpE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cpe-ue.html">UE CpE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="specializations.html">Specializations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="careers.html">Careers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="faculty.html">Faculty</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="scpes.html">SCpES</a>
+                </li>
+                <li class="nav-item ms-lg-2">
+                    <a class="btn btn-tech-primary btn-sm px-3" href="#applyModal" data-bs-toggle="modal">Apply Now</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header class="hero-banner text-center py-5">
+    <div class="container">
+        <span class="badge hero-badge px-3 py-2 text-uppercase mb-3">Academic Discipline</span>
+        <h1 class="display-4 fw-bold mb-3 text-gradient-blue pb-1 lh-base">The Computer Engineering Discipline</h1>
+        <p class="lead mx-auto text-light opacity-75" style="max-width: 760px;">
+            The intersection of digital electronics and advanced computer software, architecting systems that power modern society.
+        </p>
+    </div>
+</header>
+
+<main class="py-5">
+    <div class="container">
+        <div class="row align-items-center g-5 mb-5">
+            <div class="col-lg-6">
+                <h2 class="section-header">Bridging Hardware & Software</h2>
+                <div class="section-divider"></div>
+                <p class="lead text-light opacity-90">
+                    Computer Engineering (CpE) is a branch of engineering that integrates various fields of computer science and electronic engineering.
+                </p>
+                <p style="color: var(--text-muted);">
+                    While computer scientists focus predominantly on software algorithms, databases, and computational theory, and electrical engineers design analog power systems, computer engineers engineer the bridge between the physical and digital domains. They construct the microchips, interface buses, and low-level firmware that bring computers to life.
+                </p>
+                <p style="color: var(--text-muted);">
+                    From wearable health monitors and autonomous vehicles to enterprise telecommunications and robotic assembly lines, computer engineers build systems that operate reliably under strict real-time constraints.
+                </p>
+            </div>
+            <div class="col-lg-6">
+                <div class="tech-card p-4">
+                    <h5 class="text-white fw-bold mb-3"><i class="bi bi-diagram-3-fill text-info me-2"></i>Core Pillars of CpE</h5>
+                    <div class="mb-3">
+                        <span class="text-white fw-semibold d-block">1. Digital Circuitry & Microprocessors</span>
+                        <small style="color: var(--text-muted);">Design and simulation of arithmetic logic units, registers, bus interfaces, and programmable logic (FPGAs).</small>
+                    </div>
+                    <div class="mb-3">
+                        <span class="text-white fw-semibold d-block">2. Embedded Systems & Microcontrollers</span>
+                        <small style="color: var(--text-muted);">Programming microcontrollers (ARM, ESP32, AVR) to collect sensor data and control mechanical actuators.</small>
+                    </div>
+                    <div class="mb-3">
+                        <span class="text-white fw-semibold d-block">3. Computer Networks & Protocols</span>
+                        <small style="color: var(--text-muted);">Packet transmission, routing architectures, secure network layer topology, and IoT connectivity.</small>
+                    </div>
+                    <div>
+                        <span class="text-white fw-semibold d-block">4. Software Engineering & Systems Programming</span>
+                        <small style="color: var(--text-muted);">Low-level C/C++ development, assembly instructions, drivers, and real-time operating system (RTOS) management.</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="my-5">
+            <div class="text-center mb-4">
+                <h2 class="section-header">How CpE Compares to Other Fields</h2>
+                <div class="section-divider mx-auto"></div>
+                <p style="color: var(--text-muted);">Understanding the distinct focus and domain applications of related technology programs.</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="tech-card h-100 overflow-hidden d-flex flex-column">
+                        <div class="ratio ratio-16x9 border-bottom border-secondary">
+                            <img src="assets/cpeboy.jpg" class="object-fit-cover w-100 h-100" alt="Computer Engineering Circuit and Firmware" onerror="this.src='https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80'">
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <div class="d-flex align-items-center mb-2">
+                                <span class="badge hero-badge text-info border-info px-2 py-1 me-2"><i class="bi bi-cpu-fill me-1"></i>Hardware + Software</span>
+                            </div>
+                            <h5 class="fw-bold text-white mb-2">Computer Engineering</h5>
+                            <p class="small text-info fw-semibold mb-3">Digital Logic & Physical Systems</p>
+                            <ul class="small ps-3 mb-0 flex-grow-1" style="color: var(--text-muted);">
+                                <li class="mb-2">Microprocessor architecture, registers, and bus design</li>
+                                <li class="mb-2">Embedded microcontrollers & sensor-actuator logic</li>
+                                <li class="mb-2">Low-level firmware, C/C++, and assembly drivers</li>
+                                <li>Robotics, hardware IoT gateways, and edge devices</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="tech-card h-100 overflow-hidden d-flex flex-column">
+                        <div class="ratio ratio-16x9 border-bottom border-secondary">
+                            <img src="assets/csboy.jpg" class="object-fit-cover w-100 h-100" alt="Computer Science Software Algorithms" onerror="this.src='https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80'">
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <div class="d-flex align-items-center mb-2">
+                                <span class="badge hero-badge text-info border-info px-2 py-1 me-2"><i class="bi bi-code-square me-1"></i>Pure Software</span>
+                            </div>
+                            <h5 class="fw-bold text-white mb-2">Computer Science</h5>
+                            <p class="small text-info fw-semibold mb-3">Algorithms & Computational Theory</p>
+                            <ul class="small ps-3 mb-0 flex-grow-1" style="color: var(--text-muted);">
+                                <li class="mb-2">Algorithmic complexity, data structures, and Big-O</li>
+                                <li class="mb-2">Full-stack web applications, frameworks, and APIs</li>
+                                <li class="mb-2">Machine learning, data science, and AI models</li>
+                                <li>Relational database systems and cloud infrastructure</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="tech-card h-100 overflow-hidden d-flex flex-column">
+                        <div class="ratio ratio-16x9 border-bottom border-secondary">
+                            <img src="assets/eeboy.jpg" class="object-fit-cover w-100 h-100" alt="Electrical Engineering Power Grid" onerror="this.src='https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=600&q=80'">
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <div class="d-flex align-items-center mb-2">
+                                <span class="badge hero-badge text-info border-info px-2 py-1 me-2"><i class="bi bi-lightning-charge-fill me-1"></i>Power & Signals</span>
+                            </div>
+                            <h5 class="fw-bold text-white mb-2">Electrical Engineering</h5>
+                            <p class="small text-info fw-semibold mb-3">High Voltage & Analog Circuits</p>
+                            <ul class="small ps-3 mb-0 flex-grow-1" style="color: var(--text-muted);">
+                                <li class="mb-2">Power generation, substations, and electrical distribution</li>
+                                <li class="mb-2">Analog signal processing, amplifiers, and filtering</li>
+                                <li class="mb-2">Electromagnetic theory and RF antenna systems</li>
+                                <li>Industrial motor controls and energy conversion</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tech-card p-4 text-center my-5 bg-tech-surface">
+            <h4 class="text-white fw-bold mb-2">Curious about how UE delivers this program?</h4>
+            <p class="small mx-auto mb-4" style="color: var(--text-muted); max-width: 600px;">
+                Learn more about the University of the East Computer Engineering Department, laboratory facilities, and history.
+            </p>
+            <a href="cpe-ue.html" class="btn btn-tech-primary px-4">
+                Next: Explore UE CpE Department <i class="bi bi-arrow-right ms-1"></i>
+            </a>
+        </div>
+    </div>
+</main>
+
+<footer class="pt-5 pb-3">
+    <div class="container">
+        <div class="row g-4 mb-4">
+            <div class="col-md-4">
+                <h6 class="text-uppercase mb-3 text-info fw-bold">UE Computer Engineering</h6>
+                <p class="small">
+                    University of the East - College of Engineering.<br>
+                    Developing world-class computer engineers equipped with technical excellence, leadership, and technological innovation.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <h6 class="text-uppercase mb-3">Portal Navigation</h6>
+                <div class="row small">
+                    <div class="col-6">
+                        <ul class="list-unstyled">
+                            <li class="mb-1"><a href="index.html">Home</a></li>
+                            <li class="mb-1"><a href="about-cpe.html">About CpE</a></li>
+                            <li class="mb-1"><a href="cpe-ue.html">UE Department</a></li>
+                            <li class="mb-1"><a href="specializations.html">Specializations</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6">
+                        <ul class="list-unstyled">
+                            <li class="mb-1"><a href="careers.html">Careers</a></li>
+                            <li class="mb-1"><a href="faculty.html">Faculty</a></li>
+                            <li class="mb-1"><a href="scpes.html">SCpES</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h6 class="text-uppercase mb-3">Campuses & Contact</h6>
+                <p class="small mb-2">
+                    <i class="bi bi-geo-alt me-2 text-info"></i>
+                    <a href="https://maps.app.goo.gl/nA2VTfojB23gJPCB9" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
+                        Manila: 221 C.M. Recto Avenue
+                    </a>
+                </p>
+                <p class="small mb-2">
+                    <i class="bi bi-geo-alt me-2 text-info"></i>
+                    <a href="https://maps.app.goo.gl/nYL3vggiQVSx388dA" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
+                        Caloocan: 105 Samson Road
+                    </a>
+                </p>
+                <p class="small mb-0">
+                    <i class="bi bi-envelope me-2 text-info"></i>
+                    <a href="https://www.ue.edu.ph/cal/computer-engineering/" target="_blank" rel="noopener noreferrer" class="text-decoration-none">cpe@ue.edu.ph</a>
+                </p>
+            </div>
+        </div>
+        <div class="text-center pt-3 border-top border-dark small">
+            <p class="mb-0">&copy; 2026 University of the East - BSCpE Department. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<div class="modal fade" id="welcomeModal" tabindex="-1" aria-labelledby="welcomeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-white" id="welcomeModalLabel"><i class="bi bi-cpu-fill text-info me-2"></i>Welcome to UE CpE</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Welcome to the official <strong>UE Computer Engineering</strong> web platform.</p>
+                <p class="small mb-0" style="color: var(--text-muted);">
+                    Access our outcome-based curricula, hardware laboratory facilities, and real-time student capstone demonstrations.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="applyModal" tabindex="-1" aria-labelledby="applyModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-white" id="applyModalLabel"><i class="bi bi-check2-circle text-info me-2"></i>Apply for UE CpE</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p class="fw-bold mb-1">Admissions are Open for AY 2026-2027!</p>
+                <p class="small" style="color: var(--text-muted);">
+                    Incoming freshmen and transferees can apply online through the UE Admissions Portal. Prepare your Form 138 (Report Card) and 2x2 photo for submission.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Cancel</button>
+                <a href="https://www.ue.edu.ph" target="_blank" class="btn btn-tech-primary btn-sm">Proceed to UE Portal</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
