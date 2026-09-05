@@ -13,6 +13,10 @@
 }
 
 /* --- Global Body & Text --- */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--bg-dark) !important;
     color: var(--text-main) !important;
@@ -62,7 +66,7 @@ body {
     display: block;
 }
 
-/* Horizontal Link Styling (Like UE Portal Menu) */
+/* Horizontal Link Styling */
 .navbar-nav .nav-link {
     color: var(--text-muted) !important;
     font-size: 0.92rem;
@@ -191,7 +195,7 @@ body {
     font-weight: 500;
 }
 
-/* --- Buttons (Inverted / Vice Versa Hover Mechanics) --- */
+/* --- Buttons (Inverted Hover Mechanics) --- */
 .btn-tech-primary {
     background-color: var(--accent-white);
     border: 1px solid var(--accent-white);
@@ -296,4 +300,123 @@ footer a:hover {
 #cpeCarousel .carousel-indicators .active {
     width: 30px;
     background-color: var(--accent-blue);
+}
+
+/* --- FACULTY CINEMATIC OVERLAPPING LINEUP (Enlarged & Ultra-Dark Silhouette) --- */
+.faculty-stage-wrapper {
+    background: radial-gradient(ellipse at center, #0c121e 0%, #030508 85%);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 3.5rem 1rem 3rem;
+    position: relative;
+    overflow: hidden;
+    box-shadow: inset 0 0 80px rgba(0, 0, 0, 0.95), 0 10px 30px rgba(0, 0, 0, 0.8);
+}
+
+.faculty-stage-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: repeating-linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.25),
+        rgba(0, 0, 0, 0.25) 2px,
+        transparent 2px,
+        transparent 4px
+    );
+    pointer-events: none;
+    z-index: 1;
+}
+
+.faculty-lineup-track {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 0;
+    position: relative;
+    z-index: 2;
+    padding-bottom: 1.5rem;
+}
+
+.faculty-card {
+    position: relative;
+    text-decoration: none;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    cursor: pointer;
+    margin: 0 -45px; /* Dinagdagan ang overlap dahil mas malalapad na ang images */
+}
+
+.faculty-card:nth-child(1) { z-index: 2; }
+.faculty-card:nth-child(2) { z-index: 3; }
+.faculty-card:nth-child(3) { z-index: 4; }
+.faculty-card:nth-child(4) { z-index: 5; }
+
+/* Mas malaking shadow silhouette */
+.faculty-img {
+    width: 260px;
+    height: 400px;
+    object-fit: contain;
+    filter: grayscale(100%) brightness(8%) contrast(200%) drop-shadow(0 0 15px rgba(0, 0, 0, 1));
+    opacity: 0.92;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.faculty-tag {
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    background: rgba(11, 15, 25, 0.95);
+    border: 1px solid var(--accent-blue);
+    color: var(--accent-white);
+    padding: 5px 14px;
+    border-radius: 20px;
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 14px rgba(0, 210, 255, 0.45);
+}
+
+/* Hover: buong kulay, aangat paharap, electric cyan aura */
+.faculty-card:hover {
+    z-index: 99 !important;
+    transform: translateY(-24px) scale(1.08);
+}
+
+.faculty-card:hover .faculty-img {
+    filter: grayscale(0%) brightness(105%) contrast(105%) drop-shadow(0 0 30px rgba(0, 210, 255, 0.85));
+    opacity: 1;
+}
+
+.faculty-card:hover .faculty-tag {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
+.faculty-profile-target {
+    scroll-margin-top: 90px;
+}
+
+@media (max-width: 992px) {
+    .faculty-card {
+        margin: 0 -30px;
+    }
+    .faculty-img {
+        width: 190px;
+        height: 290px;
+    }
+}
+
+@media (max-width: 576px) {
+    .faculty-card {
+        margin: 0 -18px;
+    }
+    .faculty-img {
+        width: 130px;
+        height: 220px;
+    }
 }

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty & Staff | UE Computer Engineering</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="top-bar py-2 d-none d-lg-block">
+    <div class="container d-flex justify-content-between align-items-center">
+        <div>
+            <span><i class="bi bi-geo-alt-fill text-info me-1"></i>
+                <a href="https://maps.app.goo.gl/nA2VTfojB23gJPCB9" target="_blank" rel="noopener noreferrer" class="me-2 text-decoration-none">UE Manila</a> | 
+                <a href="https://maps.app.goo.gl/nYL3vggiQVSx388dA" target="_blank" rel="noopener noreferrer" class="ms-2 text-decoration-none">UE Caloocan</a>
+            </span>
+            <span class="ms-3"><i class="bi bi-terminal-fill text-info me-1"></i> 
+                <a href="https://www.ue.edu.ph/cal/computer-engineering/" target="_blank" rel="noopener noreferrer" class="text-decoration-none">cpe@ue.edu.ph</a>
+            </span>
+        </div>
+        <div>
+            <a href="#welcomeModal" data-bs-toggle="modal" class="me-3 text-decoration-none"><i class="bi bi-person-fill me-1"></i>Student Portal</a>
+            <a href="index.html#featured-sections" class="me-3 text-decoration-none">Quick Links</a>
+            <a href="#applyModal" data-bs-toggle="modal" class="text-info fw-bold text-decoration-none">Admission 2026</a>
+        </div>
+    </div>
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-tech-nav sticky-top shadow-sm">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="assets/scpes logo.png" alt="UE Logo" onerror="this.src='https://via.placeholder.com/40x40?text=UE'">
+            <div class="ms-2">
+                <span class="d-block lh-1 text-white fw-bold brand-title">UE COMPUTER ENGINEERING</span>
+                <small class="brand-sub">COLLEGE OF ENGINEERING</small>
+            </div>
+        </a>
+
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about-cpe.html">About CpE</a></li>
+                <li class="nav-item"><a class="nav-link" href="cpe-ue.html">UE CpE</a></li>
+                <li class="nav-item"><a class="nav-link" href="specializations.html">Specializations</a></li>
+                <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="faculty.html">Faculty</a></li>
+                <li class="nav-item"><a class="nav-link" href="scpes.html">SCpES</a></li>
+                <li class="nav-item ms-lg-2">
+                    <a class="btn btn-tech-primary btn-sm px-3" href="#applyModal" data-bs-toggle="modal">Apply Now</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header class="hero-banner py-5">
+    <div class="container text-center py-3">
+        <span class="badge hero-badge px-3 py-2 text-uppercase mb-3">Academic Mentorship</span>
+        <h1 class="display-4 fw-bold mb-3 text-gradient-blue pb-1 lh-base">UE CpE Department Faculty</h1>
+        <p class="lead mx-auto text-light opacity-75" style="max-width: 760px;">
+            Meet the licensed engineers and mentors steering the Department of Computer Engineering toward industry-standard innovation.
+        </p>
+    </div>
+</header>
+
+<main class="py-5">
+    <div class="container">
+
+        <div class="faculty-stage-wrapper mb-5 text-center">
+            <div class="d-flex justify-content-between align-items-center mb-4 px-3 position-relative" style="z-index: 3;">
+                <span class="text-uppercase fw-bold small text-info">
+                    <i class="bi bi-person-bounding-box me-2"></i>Faculty Lineup
+                </span>
+                <span class="badge hero-badge text-white-50">Hover to Reveal • Click to Inspect</span>
+            </div>
+
+            <div class="faculty-lineup-track">
+                <a href="#prof-corpuz" class="faculty-card" title="Inspect Engr. Corpuz">
+                    <img src="assets/corpuz.png" class="faculty-img" alt="Engr. Onofre F. Corpuz" onerror="this.src='https://via.placeholder.com/260x400?text=Engr.+Corpuz'">
+                    <span class="faculty-tag"><i class="bi bi-cpu text-info me-1"></i>Engr. Corpuz</span>
+                </a>
+
+                <a href="#prof-limkian" class="faculty-card" title="Inspect Engr. Limkian">
+                    <img src="assets/limkian.png" class="faculty-img" alt="Engr. Mary Ann L. Limkian" onerror="this.src='https://via.placeholder.com/260x400?text=Engr.+Limkian'">
+                    <span class="faculty-tag"><i class="bi bi-diagram-3 text-info me-1"></i>Engr. Limkian</span>
+                </a>
+
+                <a href="#prof-coral" class="faculty-card" title="Inspect Engr. Coral">
+                    <img src="assets/coral.png" class="faculty-img" alt="Engr. Joemhel Jhon D. Coral" onerror="this.src='https://via.placeholder.com/260x400?text=Engr.+Coral'">
+                    <span class="faculty-tag"><i class="bi bi-code-slash text-info me-1"></i>Engr. Coral</span>
+                </a>
+
+                <a href="#prof-antonio" class="faculty-card" title="Inspect Engr. Antonio">
+                    <img src="assets/ejm.png" class="faculty-img" alt="Engr. Errol John M. Antonio" onerror="this.src='https://via.placeholder.com/260x400?text=Engr.+Antonio'">
+                    <span class="faculty-tag"><i class="bi bi-robot text-info me-1"></i>Engr. Antonio</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="text-center mb-5">
+            <h2 class="section-header">Faculty Credentials & Profiles</h2>
+            <div class="section-divider mx-auto"></div>
+            <p style="color: var(--text-muted);">Academic background, earned degrees, and instructional focus areas.</p>
+        </div>
+
+        <div class="d-flex flex-column gap-4">
+
+            <div id="prof-corpuz" class="tech-card p-4 faculty-profile-target">
+                <div class="row align-items-center g-4">
+                    <div class="col-md-3 text-center">
+                        <img src="assets/corpuzdp.png" class="rounded-circle border border-2 border-secondary shadow-lg" style="width: 140px; height: 140px; object-fit: cover;" alt="Engr. Onofre F. Corpuz" onerror="this.src='https://via.placeholder.com/140x140?text=Engr.+Corpuz'">
+                        <span class="badge hero-badge text-info border-info mt-3 d-inline-block">Faculty</span>
+                    </div>
+                    <div class="col-md-9">
+                        <h4 class="text-white fw-bold mb-1">Engr. Onofre F. Corpuz</h4>
+                        <p class="text-info fw-semibold mb-2">Faculty Member | Department of Computer Engineering</p>
+                        <p class="small text-light opacity-75 mb-3">
+                            Brings decades of engineering education and practice, mentoring students across core electronic systems, circuits, and environmental engineering principles.
+                        </p>
+                        <div class="row g-3 small">
+                            <div class="col-md-6">
+                                <span class="text-white fw-semibold d-block"><i class="bi bi-mortarboard me-1 text-info"></i> Education:</span>
+                                <span style="color: var(--text-muted);">
+                                    • BSECE, FEATI University (1993)<br>
+                                    • MES, University of the East (2017)
+                                </span>
+                            </div>
+                            <div class="col-md-6">
+                                <span class="text-white fw-semibold d-block"><i class="bi bi-gear-fill me-1 text-info"></i> Focus Domains:</span>
+                                <span style="color: var(--text-muted);">Electronics Engineering, Environmental Systems, Engineering Sciences</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="prof-limkian" class="tech-card p-4 faculty-profile-target">
+                <div class="row align-items-center g-4">
+                    <div class="col-md-3 text-center">
+                        <img src="assets/limkiandp.png" class="rounded-circle border border-2 border-secondary shadow-lg" style="width: 140px; height: 140px; object-fit: cover;" alt="Engr. Mary Ann L. Limkian" onerror="this.src='https://via.placeholder.com/140x140?text=Engr.+Limkian'">
+                        <span class="badge hero-badge text-info border-info mt-3 d-inline-block">Faculty</span>
+                    </div>
+                    <div class="col-md-9">
+                        <h4 class="text-white fw-bold mb-1">Engr. Mary Ann L. Limkian</h4>
+                        <p class="text-info fw-semibold mb-2">Faculty Member | Computer Engineering Specializations</p>
+                        <p class="small text-light opacity-75 mb-3">
+                            Specializes in advanced computer engineering architectures, doctoral research in IT and business analytics, and outcomes-based engineering methodologies.
+                        </p>
+                        <div class="row g-3 small">
+                            <div class="col-md-6">
+                                <span class="text-white fw-semibold d-block"><i class="bi bi-mortarboard me-1 text-info"></i> Education:</span>
+                                <span style="color: var(--text-muted);">
+                                    • BSCpE, University of the East (2000)<br>
+                                    • MEng-CpE, Pamantasan ng Lungsod ng Maynila (2006)<br>
+                                    • DBA, University of the East (Units Earned)<br>
+                                    • DIT, University of the East (On-going)
+                                </span>
+                            </div>
+                            <div class="col-md-6">
+                                <span class="text-white fw-semibold d-block"><i class="bi bi-gear-fill me-1 text-info"></i> Focus Domains:</span>
+                                <span style="color: var(--text-muted);">Information Technology, Business Administration, Computer Engineering Systems</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="prof-coral" class="tech-card p-4 faculty-profile-target">
+                <div class="row align-items-center g-4">
+                    <div class="col-md-3 text-center">
+                        <img src="assets/coraldp.png" class="rounded-circle border border-2 border-secondary shadow-lg" style="width: 140px; height: 140px; object-fit: cover;" alt="Engr. Joemhel Jhon D. Coral" onerror="this.src='https://via.placeholder.com/140x140?text=Engr.+Coral'">
+                        <span class="badge hero-badge text-info border-info mt-3 d-inline-block">Faculty</span>
+                    </div>
+                    <div class="col-md-9">
+                        <h4 class="text-white fw-bold mb-1">Engr. Joemhel Jhon D. Coral</h4>
+                        <p class="text-info fw-semibold mb-2">Faculty Member | Emerging Technologies & Laboratory</p>
+                        <p class="small text-light opacity-75 mb-3">
+                            Focuses on modern computing architectures, active postgraduate research in Computer Engineering, embedded hardware interfaces, and student prototyping.
+                        </p>
+                        <div class="row g-3 small">
+                            <div class="col-md-6">
+                                <span class="text-white fw-semibold d-block"><i class="bi bi-mortarboard me-1 text-info"></i> Education:</span>
+                                <span style="color: var(--text-muted);">
+                                    • BSCpE, University of the East (2024)<br>
+                                    • MSCpE, Polytechnic University of the Philippines (On-going)
+                                </span>
+                            </div>
+                            <div class="col-md-6">
+                                <span class="text-white fw-semibold d-block"><i class="bi bi-gear-fill me-1 text-info"></i> Focus Domains:</span>
+                                <span style="color: var(--text-muted);">Applied Hardware Prototyping, Modern CpE Technologies, Microcontroller Systems</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="prof-antonio" class="tech-card p-4 faculty-profile-target">
+                <div class="row align-items-center g-4">
+                    <div class="col-md-3 text-center">
+                        <img src="assets/ejdp.png" class="rounded-circle border border-2 border-secondary shadow-lg" style="width: 140px; height: 140px; object-fit: cover;" alt="Engr. Errol John M. Antonio" onerror="this.src='https://via.placeholder.com/140x140?text=Engr.+Antonio'">
+                        <span class="badge hero-badge text-info border-info mt-3 d-inline-block">Faculty</span>
+                    </div>
+                    <div class="col-md-9">
+                        <h4 class="text-white fw-bold mb-1">Engr. Errol John M. Antonio</h4>
+                        <p class="text-info fw-semibold mb-2">Faculty Member | Networks, Systems & IT Research</p>
+                        <p class="small text-light opacity-75 mb-3">
+                            Directs core competencies in systems engineering, advanced network architectures, and continuous doctoral pursuit in Information Technology.
+                        </p>
+                        <div class="row g-3 small">
+                            <div class="col-md-6">
+                                <span class="text-white fw-semibold d-block"><i class="bi bi-mortarboard me-1 text-info"></i> Education:</span>
+                                <span style="color: var(--text-muted);">
+                                    • BSCpE, University of the East (2012)<br>
+                                    • MEng-CpE, Pamantasan ng Lungsod ng Maynila (2018)<br>
+                                    • DIT, University of the East (On-going)
+                                </span>
+                            </div>
+                            <div class="col-md-6">
+                                <span class="text-white fw-semibold d-block"><i class="bi bi-gear-fill me-1 text-info"></i> Focus Domains:</span>
+                                <span style="color: var(--text-muted);">Computer Networks, Information Technology, Advanced Computer Systems</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="tech-card p-4 text-center my-5 bg-tech-surface">
+            <h4 class="text-white fw-bold mb-2">Want to know more about the student organization?</h4>
+            <p class="small mx-auto mb-4" style="color: var(--text-muted); max-width: 600px;">
+                Discover our recognized student body—the Society of Computer Engineering Students (SCpES)—and see their community initiatives.
+            </p>
+            <a href="scpes.html" class="btn btn-tech-primary px-4">
+                Next: Discover SCpES Organization <i class="bi bi-arrow-right ms-1"></i>
+            </a>
+        </div>
+
+    </div>
+</main>
+
+<div class="modal fade" id="welcomeModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-white"><i class="bi bi-cpu-fill text-info me-2"></i>Welcome to UE CpE</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Welcome to the official <strong>UE Computer Engineering</strong> web platform.</p>
+                <p class="small text-light opacity-75 mb-0">Access outcome-based curricula, laboratory facilities, and project demonstrations.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="applyModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-white"><i class="bi bi-check2-circle text-info me-2"></i>Apply for UE CpE</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p class="fw-bold mb-1">Admissions are Open for AY 2026-2027!</p>
+                <p class="small text-light opacity-75">Incoming freshmen and transferees can apply online through the UE Admissions Portal.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Cancel</button>
+                <a href="https://www.ue.edu.ph" target="_blank" class="btn btn-tech-primary btn-sm">Proceed to Portal</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="pt-5 pb-3">
+    <div class="container">
+        <div class="row g-4 mb-4">
+            <div class="col-md-4">
+                <h6 class="text-uppercase mb-3 text-info fw-bold">UE Computer Engineering</h6>
+                <p class="small text-light opacity-75">
+                    University of the East - College of Engineering.<br>
+                    Developing world-class computer engineers through technical innovation.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <h6 class="text-uppercase mb-3">Portal Navigation</h6>
+                <div class="row small">
+                    <div class="col-6">
+                        <ul class="list-unstyled">
+                            <li class="mb-1"><a href="index.html">Home</a></li>
+                            <li class="mb-1"><a href="about-cpe.html">About CpE</a></li>
+                            <li class="mb-1"><a href="cpe-ue.html">UE Department</a></li>
+                            <li class="mb-1"><a href="specializations.html">Specializations</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6">
+                        <ul class="list-unstyled">
+                            <li class="mb-1"><a href="careers.html">Careers</a></li>
+                            <li class="mb-1"><a href="faculty.html">Faculty</a></li>
+                            <li class="mb-1"><a href="scpes.html">SCpES</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h6 class="text-uppercase mb-3">Campuses & Contact</h6>
+                <p class="small mb-2">
+                    <i class="bi bi-geo-alt me-2 text-info"></i>
+                    <a href="https://maps.app.goo.gl/nA2VTfojB23gJPCB9" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
+                        Manila: 221 C.M. Recto Avenue
+                    </a>
+                </p>
+                <p class="small mb-2">
+                    <i class="bi bi-geo-alt me-2 text-info"></i>
+                    <a href="https://maps.app.goo.gl/nYL3vggiQVSx388dA" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
+                        Caloocan: 105 Samson Road
+                    </a>
+                </p>
+                <p class="small mb-0">
+                    <i class="bi bi-envelope me-2 text-info"></i>
+                    <a href="https://www.ue.edu.ph/cal/computer-engineering/" target="_blank" rel="noopener noreferrer" class="text-decoration-none">cpe@ue.edu.ph</a>
+                </p>
+            </div>
+        </div>
+        <div class="text-center pt-3 border-top border-dark small text-light opacity-75">
+            <p class="mb-0">© 2026 University of the East - BSCpE Department. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
