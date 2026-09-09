@@ -28,3 +28,8 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+// Reset page visibility when returning via browser back/forward buttons
+window.addEventListener("pageshow", (event) => {
+    document.body.classList.remove("page-exit");
+});
