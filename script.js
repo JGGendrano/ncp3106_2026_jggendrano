@@ -1,4 +1,10 @@
+// Ensure body is visible immediately on script execution
+document.body.classList.remove("page-exit");
+
 document.addEventListener("DOMContentLoaded", () => {
+    // Double-check visibility when DOM is fully loaded
+    document.body.classList.remove("page-exit");
+
     const links = document.querySelectorAll("a[href]");
 
     links.forEach(link => {
@@ -29,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-// Reset page visibility when returning via browser back/forward buttons
+// Reset page visibility when returning via browser back/forward buttons (bfcache)
 window.addEventListener("pageshow", (event) => {
     document.body.classList.remove("page-exit");
 });
