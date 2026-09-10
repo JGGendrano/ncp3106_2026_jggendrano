@@ -296,6 +296,7 @@ footer a:hover {
     background-color: var(--accent-blue);
 }
 
+/* --- Faculty Lineup Stage --- */
 .faculty-stage-wrapper {
     background: radial-gradient(ellipse at 50% 55%, #1e3352 0%, #111e33 45%, #050811 85%);
     border: 1px solid rgba(0, 210, 255, 0.2);
@@ -309,10 +310,7 @@ footer a:hover {
 .faculty-stage-wrapper::before {
     content: '';
     position: absolute;
-    top: 0; 
-    left: 0; 
-    right: 0; 
-    bottom: 0;
+    top: 0; left: 0; right: 0; bottom: 0;
     background: repeating-linear-gradient(
         0deg,
         rgba(0, 0, 0, 0.15),
@@ -395,6 +393,70 @@ footer a:hover {
     scroll-margin-top: 90px;
 }
 
+/* --- Single Feature Slide Carousel (1 Card / Picture Per View) --- */
+.single-feature-carousel-wrapper {
+    max-width: 880px;
+    margin: 0 auto;
+}
+
+.single-feature-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.single-feature-card:hover {
+    border-color: var(--accent-blue) !important;
+    box-shadow: 0 14px 38px rgba(0, 210, 255, 0.22);
+}
+
+.single-feature-img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    display: block;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.single-feature-body {
+    background-color: var(--bg-surface);
+    padding: 1.8rem;
+}
+
+.carousel-control-single-prev,
+.carousel-control-single-next {
+    width: 48px;
+    height: 48px;
+    background-color: rgba(11, 15, 25, 0.9);
+    border: 1px solid var(--border-color);
+    border-radius: 50%;
+    color: var(--accent-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 42%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: all 0.25s ease;
+    z-index: 5;
+    text-decoration: none;
+}
+
+.carousel-control-single-prev { left: -24px; }
+.carousel-control-single-next { right: -24px; }
+
+.carousel-control-single-prev:hover,
+.carousel-control-single-next:hover {
+    background-color: var(--accent-blue);
+    color: #0b0f19;
+    border-color: var(--accent-blue);
+    box-shadow: 0 0 16px rgba(0, 210, 255, 0.55);
+}
+
 @keyframes fadeInPage {
     from {
         opacity: 0;
@@ -432,6 +494,17 @@ footer a:hover {
     .faculty-img {
         width: 190px;
         height: 290px;
+    }
+    .single-feature-img {
+        height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-control-single-prev { left: 4px; }
+    .carousel-control-single-next { right: 4px; }
+    .single-feature-img {
+        height: 230px;
     }
 }
 

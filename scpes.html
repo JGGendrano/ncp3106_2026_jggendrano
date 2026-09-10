@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCpES | UE Computer Engineering</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="top-bar py-2 d-none d-lg-block">
+    <div class="container d-flex justify-content-between align-items-center">
+        <div>
+            <span><i class="bi bi-geo-alt-fill text-info me-1"></i>
+                <a href="https://maps.app.goo.gl/nA2VTfojB23gJPCB9" target="_blank" rel="noopener noreferrer" class="me-2 text-decoration-none">UE Manila</a> | 
+                <a href="https://maps.app.goo.gl/nYL3vggiQVSx388dA" target="_blank" rel="noopener noreferrer" class="ms-2 text-decoration-none">UE Caloocan</a>
+            </span>
+            <span class="ms-3"><i class="bi bi-terminal-fill text-info me-1"></i> 
+                <a href="https://www.ue.edu.ph/cal/computer-engineering/" target="_blank" rel="noopener noreferrer" class="text-decoration-none">cpe@ue.edu.ph</a>
+            </span>
+        </div>
+        <div>
+            <a href="#welcomeModal" data-bs-toggle="modal" class="me-3 text-decoration-none"><i class="bi bi-person-fill me-1"></i>Student Portal</a>
+            <a href="index.html#featured-sections" class="me-3 text-decoration-none">Quick Links</a>
+            <a href="#applyModal" data-bs-toggle="modal" class="text-info fw-bold text-decoration-none">Admission 2026</a>
+        </div>
+    </div>
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-tech-nav sticky-top shadow-sm">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="assets/scpes logo.png" alt="UE Logo" onerror="this.src='https://via.placeholder.com/40x40?text=UE'">
+            <div class="ms-2">
+                <span class="d-block lh-1 text-white fw-bold brand-title">UE COMPUTER ENGINEERING</span>
+                <small class="brand-sub">COLLEGE OF ENGINEERING</small>
+            </div>
+        </a>
+
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about-cpe.html">About CpE</a></li>
+                <li class="nav-item"><a class="nav-link" href="cpe-ue.html">UE CpE</a></li>
+                <li class="nav-item"><a class="nav-link" href="specializations.html">Specializations</a></li>
+                <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
+                <li class="nav-item"><a class="nav-link" href="faculty.html">Faculty</a></li>
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="scpes.html">SCpES</a></li>
+                <li class="nav-item ms-lg-2">
+                    <a class="btn btn-tech-primary btn-sm px-3" href="#applyModal" data-bs-toggle="modal">Apply Now</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header class="hero-banner py-5">
+    <div class="container text-center py-4">
+        <span class="badge hero-badge px-3 py-2 text-uppercase mb-3">Recognized Student Organization</span>
+        <h1 class="display-4 fw-bold mb-3 text-gradient-blue pb-1 lh-base">Society of Computer Engineering Students</h1>
+        <p class="lead mx-auto text-light opacity-75" style="max-width: 780px;">
+            Engineered for Excellence, Powered to Perform. The official student organization representing Computer Engineering majors at the University of the East.
+        </p>
+        <div class="mt-3">
+            <a href="https://www.facebook.com/uescpes" target="_blank" rel="noopener noreferrer" class="btn btn-tech-outline btn-sm px-4">
+                <i class="bi bi-facebook text-info me-2"></i>Visit Official Facebook Page
+            </a>
+        </div>
+    </div>
+</header>
+
+<main class="py-5">
+    <div class="container">
+
+        <!-- 1. ABOUT SCPES -->
+        <div class="row align-items-center g-4 mb-5">
+            <div class="col-lg-4 text-center">
+                <div class="tech-card p-4 d-inline-block">
+                    <img src="assets/scpes logo.png" class="img-fluid p-2" style="max-height: 190px; object-fit: contain;" alt="SCpES Official Logo" onerror="this.src='https://via.placeholder.com/190x190?text=SCpES+Logo'">
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <span class="badge hero-badge text-info border-info mb-2">About SCpES</span>
+                <h3 class="text-white fw-bold mb-3">The Center of Student Innovation</h3>
+                <p class="text-light opacity-75 mb-3">
+                    The <strong>Society of Computer Engineering Students (SCpES)</strong> serves as the official academic, technical, and socio-civic community of Computer Engineering students at the University of the East. SCpES bridges theoretical coursework with hands-on practice, giving students platforms for leadership, technical skill development, peer tutorials, and direct industry networking.
+                </p>
+                <div class="d-flex flex-wrap gap-2">
+                    <span class="badge hero-badge text-info border-info">#EngineeredForExcellence</span>
+                    <span class="badge hero-badge text-info border-info">#PoweredToEngineer</span>
+                    <span class="badge hero-badge text-info border-info">#AllOutCPE</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2. ORGANIZATION OBJECTIVES -->
+        <div class="text-center mb-5">
+            <h2 class="section-header">Organization Objectives</h2>
+            <div class="section-divider mx-auto"></div>
+            <p style="color: var(--text-muted);">The primary goals that steer all SCpES programs and student initiatives.</p>
+        </div>
+
+        <div class="row g-4 mb-5">
+            <div class="col-md-4">
+                <div class="tech-card p-4 h-100 d-flex flex-column">
+                    <div class="highlight-icon-box mb-3"><i class="bi bi-mortarboard-fill"></i></div>
+                    <h5 class="text-white fw-bold mb-2">Academic Guidance</h5>
+                    <p class="small text-light opacity-75 flex-grow-1">
+                        Conducting student-led tutorials, reviewer drives, and review workshops for core subjects including logic circuits, microprocessors, and mathematics.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="tech-card p-4 h-100 d-flex flex-column">
+                    <div class="highlight-icon-box mb-3"><i class="bi bi-cpu-fill"></i></div>
+                    <h5 class="text-white fw-bold mb-2">Technical Mastery</h5>
+                    <p class="small text-light opacity-75 flex-grow-1">
+                        Equipping students with modern industry capabilities through hands-on bootcamps in microcontrollers, IoT sensor telemetry, firmware, and software development.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="tech-card p-4 h-100 d-flex flex-column">
+                    <div class="highlight-icon-box mb-3"><i class="bi bi-diagram-3-fill"></i></div>
+                    <h5 class="text-white fw-bold mb-2">External Linkages</h5>
+                    <p class="small text-light opacity-75 flex-grow-1">
+                        Cultivating active partnerships with tech companies, engineering alumni practitioners, and the Institute of Computer Engineers of the Philippines (ICpEP).
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3. EXECUTIVE OFFICERS (13 Officers, 3 per row + 13th centered) -->
+        <div class="text-center mb-5">
+            <h2 class="section-header">Executive Officers</h2>
+            <div class="section-divider mx-auto"></div>
+            <p style="color: var(--text-muted);">The student executive board steering projects, logistics, and student representation.</p>
+        </div>
+
+        <div class="row g-4 mb-5 justify-content-center">
+
+            <!-- 1. President: Charlize Baldovino -->
+            <div class="col-lg-4 col-md-6">
+                <div class="tech-card p-4 h-100 text-center d-flex flex-column align-items-center">
+                    <img src="assets/charlize.jpg" class="rounded-circle border border-2 border-secondary shadow-lg mb-3" style="width: 120px; height: 120px; object-fit: cover;" alt="Charlize Baldovino" onerror="this.src='https://via.placeholder.com/120x120?text=Charlize'">
+                    <h5 class="text-white fw-bold mb-1">Charlize Baldovino</h5>
+                    <p class="text-info fw-semibold small mb-2">President</p>
+                    <span class="badge hero-badge text-light border-secondary mt-auto">BSCpE - 3rd Year</span>
+                </div>
+            </div>
+
+            <!-- 2. VP for Internal Affairs: Jawad Macawadib -->
+            <div class="col-lg-4 col-md-6">
+                <div class="tech-card p-4 h-100 text-center d-flex flex-column align-items-center">
+                    <img src="assets/jawad.jpg" class="rounded-circle border border-2 border-secondary shadow-lg mb-3" style="width: 120px; height: 120px; object-fit: cover;" alt="Jawad Macawadib" onerror="this.src='https://via.placeholder.com/120x120?text=Jawad'">
+                    <h5 class="text-white fw-bold mb-1">Jawad Macawadib</h5>
+                    <p class="text-info fw-semibold small mb-2">VP for Internal Affairs</p>
+                    <span class="badge hero-badge text-light border-secondary mt-auto">BSCpE - 3rd Year</span>
+                </div>
+            </div>
+
+            <!-- 3. VP for External Affairs: Joshua Madriaga -->
+            <div class="col-lg-4 col-md-6">
+                <div class="tech-card p-4 h-100 text-center d-flex flex-column align-items-center">
+                    <img src="assets/joshua.jpg" class="rounded-circle border border-2 border-secondary shadow-lg mb-3" style="width: 120px; height: 120px; object-fit: cover;" alt="Joshua Madriaga" onerror="this.src='https://via.placeholder.com/120x120?text=Joshua'">
+                    <h5 class="text-white fw-bold mb-1">Joshua Madriaga</h5>
+                    <p class="text-info fw-semibold small mb-2">VP for External Affairs</p>
+                    <span class="badge hero-badge text-light border-secondary mt-auto">BSCpE - 3rd Year</span>
+                </div>
+            </div>
+
+            <!-- 4. VP for Secretariat: Ghenny Manabat -->
+            <div class="col-lg-4 col-md-6">
+                <div class="tech-card p-4 h-100 text-center d-flex flex-column align-items-center">
+                    <img src="assets/ghenny.jpg" class="rounded-circle border border-2 border-secondary shadow-lg mb-3" style="width: 120px; height: 120px; object-fit: cover;" alt="Ghenny Manabat" onerror="this.src='https://via.placeholder.com/120x120?text=Ghenny'">
+                    <h5 class="text-white fw-bold mb-1">Ghenny Manabat</h5>
+                    <p class="text-info fw-semibold small mb-2">VP for Secretariat</p>
+                    <span class="badge hero-badge text-light border-secondary mt-auto">BSCpE - 3rd Year</span>
+                </div>
+            </div>
+
+            <!-- 5. VP for Business and Finance: Jessica Apostol -->
+            <div class="col-lg-4 col-md-6">
+                <div class="tech-card p-4 h-100 text-center d-flex flex-column align-items-center">
+                    <img src="assets/jessica.jpg" class="rounded-circle border border-2 border-secondary shadow-lg mb-3" style="width: 120px; height: 120px; object-fit: cover;" alt="Jessica Apostol" onerror="this.src='https://via.placeholder.com/120x120?text=Jessica'">
+                    <h5 class="text-white fw-bold mb-1">Jessica Apostol</h5>
+                    <p class="text-info fw-semibold small mb-2">VP for Business and Finance</p>
+                    <span class="badge hero-badge text-light border-secondary mt-auto">BSCpE - 2nd Year</span>
+                </div>
+            </div>
+
+            <!-- 6. VP for Events and Programs: Roselle Landayan -->
+            <div class="col-lg-4 col-md-6">
+                <div class="tech-card p-4 h-100 text-center d-flex flex-column align-items-center">
+                    <img src="assets/roselle.jpg" class="rounded-circle border border-2 border-secondary shadow-lg mb-3" style="width: 120px; height: 120px; object-fit: cover;" alt="Roselle Landayan" onerror="this.src='https://via.placeholder.com/120x120?text=Roselle'">
+                    <h5 class="text-white fw-bold mb-1">Roselle Landayan</h5>
+                    <p class="text-info fw-semibold small mb-2">VP for Events and Programs</p>
+                    <span class="badge hero-badge text-light border-secondary mt-auto">BSCpE - 3rd Year</span>
+                </div>
+            </div>
+
+            <!-- 7. VP for Career Development: Joshua Purificacion -->
+            <div class="col-lg-4 col-md-6">
+                <div class="tech-card p-4 h-100 text-center d-flex flex-column align-items-center">
+                    <img src="assets/joshuapuri.jpg" class="rounded-circle border border-2 border-secondary shadow-lg mb-3" style="width: 120px; height: 120px; object-fit: cover;" alt="Joshua Purificacion" onerror="this.src='https://via.placeholder.com/120x120?text=Joshua+P'">
+                    <h5 class="text-white fw-bold mb-1">Joshua Purificacion</h5>
+                    <p class="text-info fw-semibold small mb-2">VP for Career Development</p>
+                    <span class="badge hero-badge text-light border-secondary mt-auto">BSCpE - 3rd Year</span>
+                </div>
+            </div>
+
+            <!-- 8. VP for Community & Social Responsibility: Earl Lorenzo -->
+            <div class="col-lg-4 col-md-6">
+                <div class="tech-card p-4 h-100 text-center d-flex flex-column align-items-center">
+                    <img src="assets/earl.jpg" class="rounded-circle border border-2 border-secondary shadow-lg mb-3" style="width: 120px; height: 120px; object-fit: cover;" alt="Earl Lorenzo" onerror="this.src='https://via.placeholder.com/120x120?text=Earl'">
+                    <h5 class="text-white fw-bold mb-1">Earl Lorenzo</h5>
+                    <p class="text-info fw-semibold small mb-2">VP for Community & Social Responsibility</p>
+                    <span class="badge hero-badge text-light border-secondary mt-auto">BSCpE - 3rd Year</span>
+                </div>
+            </div>
+
+            <!-- 9. VP for Technical Operations: Mei Rupera -->
+            <div class="col-lg-4 col-md-6">
+                <div class="tech-card p-4 h-100 text-center d-flex flex-column align-items-center">
+                    <img src="assets/mei.jpg" class="rounded-circle border border-2 border-secondary shadow-lg mb-3" style="width: 120px; height: 120px; object-fit: cover;" alt="Mei Rupera" onerror="this.src='https://via.placeholder.com/120x120?text=Mei'">
+                    <h5 class="text-white fw-bold mb-1">Mei Rupera</h5>
+                    <p class="text-info fw-semibold small mb-2">VP for Technical Operations</p>
+                    <span class="badge hero-badge text-light border-secondary mt-auto">BSCpE - 3rd Year</span>
+                </div>
+            </div>
+
+            <!-- 10. VP for Creatives & Communication: Jian Cruz -->
+            <div class="col-lg-4 col-md-6">
+                <div class="tech-card p-4 h-100 text-center d-flex flex-column align-items-center">
+                    <img src="assets/jian.jpg" class="rounded-circle border border-2 border-secondary shadow-lg mb-3" style="width: 120px; height: 120px; object-fit: cover;" alt="Jian Cruz" onerror="this.src='https://via.placeholder.com/120x120?text=Jian'">
+                    <h5 class="text-white fw-bold mb-1">Jian Cruz</h5>
+                    <p class="text-info fw-semibold small mb-2">VP for Creatives & Communication</p>
+                    <span class="badge hero-badge text-light border-secondary mt-auto">BSCpE - 2nd Year</span>
+                </div>
+            </div>
+
+            <!-- 11. VP for Media: Joe Cornita -->
+            <div class="col-lg-4 col-md-6">
+                <div class="tech-card p-4 h-100 text-center d-flex flex-column align-items-center">
+                    <img src="assets/joe.jpg" class="rounded-circle border border-2 border-secondary shadow-lg mb-3" style="width: 120px; height: 120px; object-fit: cover;" alt="Joe Cornita" onerror="this.src='https://via.placeholder.com/120x120?text=Joe'">
+                    <h5 class="text-white fw-bold mb-1">Joe Cornita</h5>
+                    <p class="text-info fw-semibold small mb-2">VP for Media</p>
+                    <span class="badge hero-badge text-light border-secondary mt-auto">BSCpE - 4th Year</span>
+                </div>
+            </div>
+
+            <!-- 12. VP for Logistics & Volunteer's Coordination: Bench Paed -->
+            <div class="col-lg-4 col-md-6">
+                <div class="tech-card p-4 h-100 text-center d-flex flex-column align-items-center">
+                    <img src="assets/bench.jpg" class="rounded-circle border border-2 border-secondary shadow-lg mb-3" style="width: 120px; height: 120px; object-fit: cover;" alt="Bench Paed" onerror="this.src='https://via.placeholder.com/120x120?text=Bench'">
+                    <h5 class="text-white fw-bold mb-1">Bench Paed</h5>
+                    <p class="text-info fw-semibold small mb-2">VP for Logistics & Volunteer's Coordination</p>
+                    <span class="badge hero-badge text-light border-secondary mt-auto">BSCpE - 3rd Year</span>
+                </div>
+            </div>
+
+            <!-- 13. VP for Recreation and Wellness: Felix Adriano (Center Aligned) -->
+            <div class="col-lg-4 col-md-6">
+                <div class="tech-card p-4 h-100 text-center d-flex flex-column align-items-center">
+                    <img src="assets/felix.jpg" class="rounded-circle border border-2 border-secondary shadow-lg mb-3" style="width: 120px; height: 120px; object-fit: cover;" alt="Felix Adriano" onerror="this.src='https://via.placeholder.com/120x120?text=Felix'">
+                    <h5 class="text-white fw-bold mb-1">Felix Adriano</h5>
+                    <p class="text-info fw-semibold small mb-2">VP for Recreation and Wellness</p>
+                    <span class="badge hero-badge text-light border-secondary mt-auto">BSCpE - 3rd Year</span>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- 4. ACTIVITIES & EVENTS (Single Feature Slide Carousel) -->
+        <div class="text-center mb-5">
+            <h2 class="section-header">Activities & Events</h2>
+            <div class="section-divider mx-auto"></div>
+            <p style="color: var(--text-muted);">Browse through our featured student gatherings, maker conventions, and fellowship events.</p>
+        </div>
+
+        <div class="single-feature-carousel-wrapper position-relative mb-5 px-3">
+            <div id="activitiesCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+
+                <div class="carousel-inner">
+
+                    <!-- Slide 1: RSTW 2026 -->
+                    <div class="carousel-item active">
+                        <div class="single-feature-card">
+                            <img src="assets/RSTW.jpg" class="single-feature-img" alt="RSTW 2026" onerror="this.src='https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80'">
+                            <div class="single-feature-body">
+                                <span class="badge hero-badge text-info border-info mb-2">DOST NCR • August 6, 2026</span>
+                                <h4 class="text-white fw-bold mb-2">Junior CpE Students at RSTW 2026: Science Beyond Borders</h4>
+                                <p class="small text-light opacity-75 mb-0">
+                                    Our Junior Computer Engineering students visited the Regional Science, Technology, and Innovation Week at Valenzuela People’s Park, discovering interactive exhibits and homegrown Filipino engineering solutions designed for real-world impact.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2: Kape Ka Muna -->
+                    <div class="carousel-item">
+                        <div class="single-feature-card">
+                            <img src="assets/kape.jpg" class="single-feature-img" alt="Kape Ka Muna" onerror="this.src='https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1200&q=80'">
+                            <div class="single-feature-body">
+                                <span class="badge hero-badge text-info border-info mb-2">Warrior Welfare • Semester Kickoff</span>
+                                <h4 class="text-white fw-bold mb-2">KAPE Ka Muna! Free Coffee & Bread Treat</h4>
+                                <p class="small text-light opacity-75 mb-0">
+                                    Before the deadlines and quizzes take over, SCpES treated students to free hot coffee and bread on the first day of classes to bring warmth, energy, and smiles across the Red Warrior engineering community.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3: Arduino Day Philippines 2026 -->
+                    <div class="carousel-item">
+                        <div class="single-feature-card">
+                            <img src="assets/arduino.jpg" class="single-feature-img" alt="Arduino Day 2026" onerror="this.src='https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80'">
+                            <div class="single-feature-body">
+                                <span class="badge hero-badge text-info border-info mb-2">Maker Assembly • March 21, 2026</span>
+                                <h4 class="text-white fw-bold mb-2">Sophomores Join Arduino Day Philippines 2026</h4>
+                                <p class="small text-light opacity-75 mb-0">
+                                    Sophomore Computer Engineering students joined a collaborative global maker event, testing real-world hardware integrations and learning how ideas transform into purposeful solutions.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 4: Thanksgiving Party 2025 -->
+                    <div class="carousel-item">
+                        <div class="single-feature-card">
+                            <img src="assets/thanksgiving.jpg" class="single-feature-img" alt="Thanksgiving Party 2025" onerror="this.src='https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1200&q=80'">
+                            <div class="single-feature-body">
+                                <span class="badge hero-badge text-info border-info mb-2">Year-End Gathering • December 28, 2025</span>
+                                <h4 class="text-white fw-bold mb-2">Core Memory Unlocked: CpE Thanksgiving Fellowship</h4>
+                                <p class="small text-light opacity-75 mb-0">
+                                    A memorable year-end break bringing together students, faculty, alumni, and sponsors to celebrate shared milestones, laughter, and brotherhood beyond the classroom walls.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Nav Controls -->
+                <button class="carousel-control-single-prev" type="button" data-bs-target="#activitiesCarousel" data-bs-slide="prev" aria-label="Previous Slide">
+                    <i class="bi bi-chevron-left fs-5"></i>
+                </button>
+                <button class="carousel-control-single-next" type="button" data-bs-target="#activitiesCarousel" data-bs-slide="next" aria-label="Next Slide">
+                    <i class="bi bi-chevron-right fs-5"></i>
+                </button>
+
+                <!-- Indicators -->
+                <div class="carousel-indicators position-relative mt-4 mb-0">
+                    <button type="button" data-bs-target="#activitiesCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#activitiesCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#activitiesCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#activitiesCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- 5. PROJECTS & ACCOMPLISHMENTS (Single Feature Slide Carousel) -->
+        <div class="text-center mb-5">
+            <h2 class="section-header">Projects & Accomplishments</h2>
+            <div class="section-divider mx-auto"></div>
+            <p style="color: var(--text-muted);">Explore our national competition achievements, research forums, and design exhibits.</p>
+        </div>
+
+        <div class="single-feature-carousel-wrapper position-relative mb-5 px-3">
+            <div id="projectsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+
+                <div class="carousel-inner">
+
+                    <!-- Slide 1: Packetworx PacketHacks 2025 -->
+                    <div class="carousel-item active">
+                        <div class="single-feature-card">
+                            <img src="assets/packethacks.jpg" class="single-feature-img" alt="PacketHacks 2025" onerror="this.src='https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=80'">
+                            <div class="single-feature-body">
+                                <span class="badge hero-badge text-info border-info mb-2">1st Runner-up • National Tilt</span>
+                                <h4 class="text-white fw-bold mb-2">Packetworx PacketHacks: Hack the Climate 2025</h4>
+                                <p class="small text-light opacity-75 mb-0">
+                                    A team of five BSCpE seniors from UE Manila clinched 1st Runner-up at the prestigious PacketHacks national hackathon, building an IoT-enabled environmental monitoring solution. Macte virtute, Warriors!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2: 1st Research Colloquium Forum -->
+                    <div class="carousel-item">
+                        <div class="single-feature-card">
+                            <img src="assets/colloquium.jpg" class="single-feature-img" alt="Research Colloquium" onerror="this.src='https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1200&q=80'">
+                            <div class="single-feature-body">
+                                <span class="badge hero-badge text-info border-info mb-2">Research Defense • Academic Forum</span>
+                                <h4 class="text-white fw-bold mb-2">1st CpE Research Colloquium Forum</h4>
+                                <p class="small text-light opacity-75 mb-0">
+                                    3rd-year design proposals and 4th-year completed systems were defended before a panel of invited external experts. Highlighting SDG-aligned technical solutions built to address industrial and societal needs.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3: Design Project Exhibit 2026 -->
+                    <div class="carousel-item">
+                        <div class="single-feature-card">
+                            <img src="assets/exhibit.jpg" class="single-feature-img" alt="Design Project Exhibit" onerror="this.src='https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1200&q=80'">
+                            <div class="single-feature-body">
+                                <span class="badge hero-badge text-info border-info mb-2">Project Showcase • April 24, 2026</span>
+                                <h4 class="text-white fw-bold mb-2">Design Project Exhibit at Research Colloquium 2026</h4>
+                                <p class="small text-light opacity-75 mb-0">
+                                    3rd and 4th-year students opened their research posters and working hardware systems for interactive demo exploration, giving younger cohorts inspiration on building projects from concept to execution.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 4: Arduino & Figma Workshop (Engineering Week 2025) -->
+                    <div class="carousel-item">
+                        <div class="single-feature-card">
+                            <img src="assets/workshop.jpg" class="single-feature-img" alt="Arduino and Figma Workshops" onerror="this.src='https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=1200&q=80'">
+                            <div class="single-feature-body">
+                                <span class="badge hero-badge text-info border-info mb-2">Skill Building • Eng'g Week 2025</span>
+                                <h4 class="text-white fw-bold mb-2">Workshops on Arduino and Figma: Engineering Week 2025</h4>
+                                <p class="small text-light opacity-75 mb-0">
+                                    Hands-on UI/UX prototyping and microcontroller training led by guest speakers Mr. Kevin Bryan Mecija and Vince Vinas, equipping CpE students with modern product design and hardware skills.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Nav Controls -->
+                <button class="carousel-control-single-prev" type="button" data-bs-target="#projectsCarousel" data-bs-slide="prev" aria-label="Previous Slide">
+                    <i class="bi bi-chevron-left fs-5"></i>
+                </button>
+                <button class="carousel-control-single-next" type="button" data-bs-target="#projectsCarousel" data-bs-slide="next" aria-label="Next Slide">
+                    <i class="bi bi-chevron-right fs-5"></i>
+                </button>
+
+                <!-- Indicators -->
+                <div class="carousel-indicators position-relative mt-4 mb-0">
+                    <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- 6. STUDENT INVOLVEMENT CALL TO ACTION -->
+        <div class="tech-card p-5 text-center my-5 bg-tech-surface">
+            <span class="badge hero-badge text-info border-info mb-3">Student Involvement</span>
+            <h3 class="text-white fw-bold mb-3">Get Involved with SCpES</h3>
+            <p class="small mx-auto text-light opacity-75 mb-4" style="max-width: 650px;">
+                Whether you want to build hardware prototypes, participate in coding sprints, organize university-wide events, or handle creative media, SCpES offers committees where you can thrive.
+            </p>
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+                <a href="https://www.facebook.com/uescpes" target="_blank" rel="noopener noreferrer" class="btn btn-tech-primary px-4">
+                    <i class="bi bi-facebook me-2"></i>Visit Official Facebook Page
+                </a>
+                <a href="index.html" class="btn btn-tech-outline px-4">
+                    <i class="bi bi-house-door-fill me-2"></i>Return to Portal
+                </a>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<div class="modal fade" id="welcomeModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-white"><i class="bi bi-cpu-fill text-info me-2"></i>Welcome to UE CpE</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Welcome to the official <strong>UE Computer Engineering</strong> web platform.</p>
+                <p class="small text-light opacity-75 mb-0">Access outcome-based curricula, laboratory facilities, and project demonstrations.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="applyModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-white"><i class="bi bi-check2-circle text-info me-2"></i>Apply for UE CpE</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p class="fw-bold mb-1">Admissions are Open for AY 2026-2027!</p>
+                <p class="small text-light opacity-75">Incoming freshmen and transferees can apply online through the UE Admissions Portal.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Cancel</button>
+                <a href="https://www.ue.edu.ph" target="_blank" class="btn btn-tech-primary btn-sm">Proceed to Portal</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="pt-5 pb-3">
+    <div class="container">
+        <div class="row g-4 mb-4">
+            <div class="col-md-4">
+                <h6 class="text-uppercase mb-3 text-info fw-bold">UE Computer Engineering</h6>
+                <p class="small text-light opacity-75">
+                    University of the East - College of Engineering.<br>
+                    Developing world-class computer engineers through technical innovation.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <h6 class="text-uppercase mb-3">Portal Navigation</h6>
+                <div class="row small">
+                    <div class="col-6">
+                        <ul class="list-unstyled">
+                            <li class="mb-1"><a href="index.html">Home</a></li>
+                            <li class="mb-1"><a href="about-cpe.html">About CpE</a></li>
+                            <li class="mb-1"><a href="cpe-ue.html">UE Department</a></li>
+                            <li class="mb-1"><a href="specializations.html">Specializations</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6">
+                        <ul class="list-unstyled">
+                            <li class="mb-1"><a href="careers.html">Careers</a></li>
+                            <li class="mb-1"><a href="faculty.html">Faculty</a></li>
+                            <li class="mb-1"><a href="scpes.html">SCpES</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h6 class="text-uppercase mb-3">Campuses & Contact</h6>
+                <p class="small mb-2">
+                    <i class="bi bi-geo-alt me-2 text-info"></i>
+                    <a href="https://maps.app.goo.gl/nA2VTfojB23gJPCB9" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
+                        Manila: 221 C.M. Recto Avenue
+                    </a>
+                </p>
+                <p class="small mb-2">
+                    <i class="bi bi-geo-alt me-2 text-info"></i>
+                    <a href="https://maps.app.goo.gl/nYL3vggiQVSx388dA" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
+                        Caloocan: 105 Samson Road
+                    </a>
+                </p>
+                <p class="small mb-0">
+                    <i class="bi bi-envelope me-2 text-info"></i>
+                    <a href="https://www.ue.edu.ph/cal/computer-engineering/" target="_blank" rel="noopener noreferrer" class="text-decoration-none">cpe@ue.edu.ph</a>
+                </p>
+            </div>
+        </div>
+        <div class="text-center pt-3 border-top border-dark small text-light opacity-75">
+            <p class="mb-0">© 2026 University of the East - BSCpE Department. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
