@@ -517,3 +517,56 @@ footer a:hover {
         height: 220px;
     }
 }
+
+/* --- Helper & Utility Classes --- */
+.hero-lead {
+    max-width: 760px;
+}
+
+.carousel-img {
+    height: 360px;
+    object-fit: cover;
+}
+
+.text-muted-custom {
+    color: var(--text-muted) !important;
+}
+
+/* --- Navigation & Focus Fixes --- */
+.navbar-nav .nav-link {
+    display: inline-block;
+}
+
+.btn-tech-primary:focus-visible,
+.btn-tech-outline:focus-visible {
+    outline: 2px solid var(--accent-blue);
+    outline-offset: 3px;
+}
+
+/* --- Mobile Responsiveness Adjustments --- */
+@media (max-width: 768px) {
+    .faculty-lineup-track {
+        overflow-x: auto;
+        justify-content: flex-start;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .faculty-card {
+        margin: 0 -10px;
+        flex-shrink: 0;
+    }
+
+    .faculty-img {
+        width: 160px;
+        height: 250px;
+    }
+
+    .faculty-tag {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+        font-size: 0.72rem;
+        padding: 3px 10px;
+    }
+}
